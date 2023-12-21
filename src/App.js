@@ -52,6 +52,58 @@ function App() {
             <div class="item"></div>
 </main>
     </section>
+{/* CONTACT CONTENT */}
+<section class="contact_content" id="contact_content">
+        <h1>Get in touch!</h1>
+        <p>Want to get in touch? Here's where I'm available:</p>
+        <div class="contact_info">
+          <div class="container_left">
+        <div class="contacts-container">
+          <h3 class="contacts-header">Contacts</h3>
+          <div class="contacts-element">
+            <span class="contacts-item">C: </span>
+            <a href="tel:+400770113529" class="contacts-phone">
+              +40 0770 113 529
+            </a>
+          </div>
+          <div>
+            <span class="contacts-item">E: </span>
+            <a href="mailto:popsergiugeorge@gmail.com" class="contacts-email">
+              popsergiugeorge@gmail.com
+            </a>
+          </div>
+        </div>
+        <div class="skills-section">
+          <h3 class="skills-header">Tech Skills</h3>
+          <ul class="skills-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>GIT</li>
+            <li>WebPack</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+        </div>
+        <div class="container_right">
+        <div class="social_buttons">
+        </div>
+        </div>
+        </div>
+        {/* FOOTER */}
+      <div class="footer">
+        Designed and Coded by{" "}
+        <a
+          href="https://www.linkedin.com/in/sergiu-george-pop-0a9097260/"
+          target="_blank"
+        >
+          Pop Sergiu
+        </a>
+      </div>
+        
+      </section>
+
 
     </div>
   );
