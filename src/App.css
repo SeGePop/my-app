@@ -1,38 +1,226 @@
-.App {
-  text-align: center;
+:root {
+  --highlight: #047690;
+  --body_background: rgb(20, 20, 20);
+  --background: #333;
+  --text-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  background-color: var(--body_background);
+  color: var(--text-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  max-width: 50px;
+  height: auto;
+  width: auto\9; /* ie8 */
+  padding: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* topbar */
+/* Add a black background color to the top navigation */
+
+.logo_area {
+  flex: 1;
+}
+
+/* navigation bar */
+/* Style the links inside the navigation bar */
+.topnav {
+    width: 100%;
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  background-color: var(--background);
+  border-radius: 5px 5px 0px 0px;
+}
+
+.topnav a {
+    float: right;
+  color: var(--text-color);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: var(--text-color);
+  color: var(--highlight);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: var(--highlight);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Page content */
+section {
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* HOME CONTENT */
+.home_content {
+  background-color: var(--body_background);
+  text-shadow: 0px 1px 0 var(--highlight);
+  margin-left: 25vh;
+  margin-top: 10vh;
+  width: 70%;
+  font-size: larger;
+}
+.home_content > span {
+  color: var(--highlight);
+  text-shadow: 1px 1px 1px black;
+}
+
+.circle {
+  box-shadow: 0 0 10px var(--highlight);
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  float: left;
+  border-radius: 50%;
+  margin: 20px;
+  shape-outside: circle();
+}
+
+.home_email {
+  display: flex;
+  justify-content: space-between;
+}
+.home_email > a {
+  color: var(--text-color);
+  text-decoration: none;
+  background-color: var(--highlight);
+  width: 40%;
+  padding: 5px;
+  margin-top: 50px;
+  text-align: center;
+  border-radius: 5px;
+}
+.home_email > a > strong {
+  color: var(--text-color);
+  display: inline-block;
+  transform: translateX(30%);
+  transition: 0.5s;
+}
+.home_email:hover > a > strong {
+  transform: translateX(70%);
+}
+
+/* SECTION CONTENT */
+
+/* all links must remain white */
+a {
+  color: var(--text-color);
+}
+
+.projects_content {
+  margin-top: 50px;
+  display: grid;
+  grid-template-rows: 500px 100px;
+  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+main#carousel {
+  grid-row: 1 / 2;
+  grid-column: 1 / 8;
+  width: 90vw;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  --items: 5;
+  --middle: 3;
+  --position: 1;
+  pointer-events: none;
+}
+
+div.item {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  background-color: coral;
+  --r: calc(var(--position) - var(--offset));
+  --abs: max(calc(var(--r) * -1), var(--r));
+  transition: all 0.25s linear;
+  transform: rotateY(calc(-10deg * var(--r)))
+    translateX(calc(-300px * var(--r)));
+  z-index: calc((var(--position) - var(--abs)));
+}
+
+div.item:nth-of-type(1) {
+  --offset: 1;
+  background-color: #90f1ef;
+}
+div.item:nth-of-type(2) {
+  --offset: 2;
+  background-color: #ff70a6;
+}
+div.item:nth-of-type(3) {
+  --offset: 3;
+  background-color: #ff9770;
+}
+div.item:nth-of-type(4) {
+  --offset: 4;
+  background-color: #ffd670;
+}
+div.item:nth-of-type(5) {
+  --offset: 5;
+  background-color: #e9ff70;
+}
+
+input:nth-of-type(1) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(1):checked ~ main#carousel {
+  --position: 1;
+}
+
+input:nth-of-type(2) {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(2):checked ~ main#carousel {
+  --position: 2;
+}
+
+input:nth-of-type(3) {
+  grid-column: 4 /5;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(3):checked ~ main#carousel {
+  --position: 3;
+}
+
+input:nth-of-type(4) {
+  grid-column: 5 / 6;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(4):checked ~ main#carousel {
+  --position: 4;
+}
+
+input:nth-of-type(5) {
+  grid-column: 6 / 7;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(5):checked ~ main#carousel {
+  --position: 5;
 }
