@@ -94,10 +94,8 @@ function Projects() {
 function Contact() {
   return (
     <section class="contact_content" id="contact_content">
-      <h1>Get in touch!</h1>
-      <p>Want to get in touch? Here's where I'm available:</p>
+      
       <div class="contact_info">
-        <div class="container_left">
           <div class="contacts-container">
             <h3 class="contacts-header">Contacts</h3>
             <div class="contacts-element">
@@ -108,27 +106,13 @@ function Contact() {
             </div>
             <div>
               <span class="contacts-item">E: </span>
-              <a href="mailto:popsergiugeorge@gmail.com" class="contacts-email">
-                popsergiugeorge@gmail.com
+              <a href="mailto:sergiugeorgepop@gmail.com" class="contacts-email">
+                sergiugeorgepop@gmail.com
               </a>
             </div>
-          </div>
-          <div class="skills-section">
-            <h3 class="skills-header">Tech Skills</h3>
-            <ul class="skills-list">
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>GIT</li>
-              <li>WebPack</li>
-              <li>JavaScript</li>
-              <li>React.js</li>
-              <li>Node.js</li>
-            </ul>
-          </div>
+          
         </div>
-        <div class="container_right">
           <div class="social_buttons"></div>
-        </div>
       </div>
     </section>
   );

@@ -12,12 +12,9 @@ html {
   background-color: var(--body_background);
   color: var(--text-color);
 }
-.website{
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  
-  flex-direction: column;
+body {
+  height: 100%;
+  overflow-y: hidden;
 }
 
 .logo {
@@ -70,33 +67,61 @@ html {
 }
 
 /* Page content */
+
+.website {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 section {
+  padding-top: 50px;
+  height: 100vh;
   height: 100vh;
   top: 0;
   width: 90vw;
 }
+/* all links must remain white */
+a {
+  color: var(--text-color);
+}
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {section{
-    font-size: 0.7em;}}
+@media only screen and (max-width: 600px) {
+  section {
+    font-size: 0.7em;
+  }
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {section{
-    font-size: 1.0em;}}
+@media only screen and (min-width: 600px) {
+  section {
+    font-size: 1em;
+  }
+}
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {section{
-    font-size: 1.1em;}}
+@media only screen and (min-width: 768px) {
+  section {
+    font-size: 1.1em;
+  }
+}
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {section{
-    font-size: 1.2em;}}
+@media only screen and (min-width: 992px) {
+  section {
+    font-size: 1.2em;
+  }
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {section{
-    font-size: 19px;}}
+@media only screen and (min-width: 1200px) {
+  section {
+    font-size: 19px;
+  }
+}
 
 /* HOME CONTENT */
 .home_content {
   background-color: var(--body_background);
   text-shadow: 0px 1px 0 var(--highlight);
-  margin-top: 10vh;
   width: 70vw;
 }
 .home_content > span {
@@ -140,18 +165,7 @@ section {
   transform: translateX(70%);
 }
 
-/* SECTION CONTENT */
-
-section {
-  padding-top: 50px;
-  height: 100vh;
-}
-
-/* all links must remain white */
-a {
-  color: var(--text-color);
-}
-
+/* PROJECTS */
 .projects_content {
   margin-top: 50px;
   display: grid;
@@ -252,9 +266,9 @@ input:nth-of-type(5):checked ~ main#carousel {
   --position: 5;
 }
 
-.footer {
-  position: fixed;
-  bottom: 5px;
-  left: 5px;
-  width: 100%;
+/* CONTACT */
+.contact_content{
+  text-align: center;
+vertical-align: middle;
+line-height: 90px; 
 }
