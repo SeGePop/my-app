@@ -12,6 +12,13 @@ html {
   background-color: var(--body_background);
   color: var(--text-color);
 }
+.website{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  
+  flex-direction: column;
+}
 
 .logo {
   max-width: 50px;
@@ -30,16 +37,16 @@ html {
 /* navigation bar */
 /* Style the links inside the navigation bar */
 .topnav {
-    width: 100%;
+  width: 100%;
   overflow: hidden;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   background-color: var(--background);
-  border-radius: 5px 5px 0px 0px;
+  z-index: 10;
 }
 
 .topnav a {
-    float: right;
+  float: right;
   color: var(--text-color);
   padding: 14px 16px;
   text-decoration: none;
@@ -49,7 +56,6 @@ html {
   flex-direction: column;
   justify-content: space-between;
 }
-
 
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -65,17 +71,33 @@ html {
 
 /* Page content */
 section {
-  height: 100%;
+  height: 100vh;
+  top: 0;
+  width: 90vw;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {section{
+    font-size: 0.7em;}}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {section{
+    font-size: 1.0em;}}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {section{
+    font-size: 1.1em;}}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {section{
+    font-size: 1.2em;}}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {section{
+    font-size: 19px;}}
 
 /* HOME CONTENT */
 .home_content {
   background-color: var(--body_background);
   text-shadow: 0px 1px 0 var(--highlight);
-  margin-left: 25vh;
   margin-top: 10vh;
-  width: 70%;
-  font-size: larger;
+  width: 70vw;
 }
 .home_content > span {
   color: var(--highlight);
@@ -119,6 +141,11 @@ section {
 }
 
 /* SECTION CONTENT */
+
+section {
+  padding-top: 50px;
+  height: 100vh;
+}
 
 /* all links must remain white */
 a {
@@ -223,4 +250,11 @@ input:nth-of-type(5) {
 }
 input:nth-of-type(5):checked ~ main#carousel {
   --position: 5;
+}
+
+.footer {
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+  width: 100%;
 }
