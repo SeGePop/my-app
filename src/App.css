@@ -5,6 +5,68 @@
   --text-color: white;
 }
 
+/* PAGE FORMATTING */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  section {
+    font-size: 0.8em;
+    width:90vw !important;
+    margin-top:60px;
+  }
+  /* PROFILE PICTURE */
+.circle {
+  box-shadow: 0 0 10px var(--highlight);
+  position: relative;
+  overflow: hidden;
+  width: 100px !important;
+  height: 100px !important;
+  float: left;
+  border-radius: 50%;
+  margin: 20px;
+  shape-outside: circle();
+}
+/* PROJECTS */
+  .projects_content {
+    display:block !important;
+  }
+  div.gallery {
+    width: 40vw !important;
+    height:230px !important;
+    flex-direction:row !important;
+    justify-content: space-between;
+  }
+/* CONTACT */
+.contacts-container>h1{
+font-size:0;
+}
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  section {
+    font-size: 1em;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  section {
+    font-size: 1.1em;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  section {
+    font-size: 1.2em;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  section {
+    font-size: 19px;
+  }
+}
+
+
 html {
   scroll-behavior: smooth;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -87,36 +149,6 @@ a {
   color: var(--text-color);
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  section {
-    font-size: 0.7em;
-  }
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  section {
-    font-size: 1em;
-  }
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  section {
-    font-size: 1.1em;
-  }
-}
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  section {
-    font-size: 1.2em;
-  }
-}
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  section {
-    font-size: 19px;
-  }
-}
 
 /* HOME CONTENT */
 .home_content {
@@ -165,6 +197,7 @@ a {
 }
 
 /* PROJECTS */
+
 .projects_content {
   display: flex;
   align-items: center;
