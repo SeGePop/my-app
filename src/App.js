@@ -51,7 +51,7 @@ function Home() {
   return (
     <section class="home_content" id="home_content">
       <img loading="lazy" src={profile} alt="profile" class="circle" />
-      <h2>User friendly, user first websites.</h2>
+      <h1>User friendly, user first websites.</h1>
       Hello! My name is <span>Pop Sergiu George</span>, and welcome to my
       website!
       <p>
@@ -79,7 +79,7 @@ function Home() {
 function Projects() {
   return (
     <section class="projects_content" id="projects_content">
-      <h2>Projects</h2>
+      <h1>Projects</h1>
       <div class="gallery">
         <a target="_blank" href="https://github.com/SeGePop/25-5-Clock">
           <img loading="lazy" src={clock} alt="25+5 Clock"/>
@@ -117,10 +117,10 @@ function Contact() {
     <section class="contact_content" id="contact_content">
       <div class="contact_info">
         <div class="contacts-container">
-          <h2>Get in touch!</h2>
+          <h1>Get in touch!</h1>
           <div class="columns">
             <div class="left_column">
-              <h1>How Can I Help You?</h1>
+              <h2>How Can I Help You?</h2>
               <ul>
                 <li>
                   <i>Hiring?</i> Let’s discuss your project requirements, goals,
