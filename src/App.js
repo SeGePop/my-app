@@ -158,6 +158,7 @@ function Contact() {
               fgColor="white"
               url="https://linkedin.com"
               href="https://www.linkedin.com/in/sergiu-george-pop-0a9097260/"
+              target="_blank"
             />
             <SocialIcon
               style={{ height: 80, width: 80 }}
@@ -165,6 +166,7 @@ function Contact() {
               fgColor="white"
               network="github"
               href="https://github.com/SeGePop"
+              target="_blank"
             />
             <SocialIcon
               style={{ height: 80, width: 80 }}
@@ -172,6 +174,7 @@ function Contact() {
               fgColor="white"
               url="https://twitter.com"
               href="https://twitter.com/SeGePop"
+              target="_blank"
             />
             <div></div>
           </div>
