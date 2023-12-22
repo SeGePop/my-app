@@ -70,6 +70,18 @@ function Home() {
         a 3 month long project coordinating up to 10 people, I have decided to
         shift my focus on what I've always been passionate about, telling
         computers what to do and how to think.
+        
+        <div class="warning">
+        <p>
+        <strong>THIS WEBSITE IS UNDER DEVELOPMENT!</strong>
+        </p>
+        <p>
+        <strong>HAPPY HOLIDAYS!</strong>
+        </p>
+        </div>
+        
+        
+        
       </p>
       <div class="home_email">
         <a href="mailto:sergiugeorgepop@gmail.com" id="home_mail">

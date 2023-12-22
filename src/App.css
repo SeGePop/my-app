@@ -5,6 +5,13 @@
   --text-color: white;
 }
 
+/* WARNING */
+.warning{
+  color:red;
+  text-align: center;
+  vertical-align: middle;
+}
+
 /* PAGE FORMATTING */
 
 /* Extra small devices (phones, 600px and down) */
