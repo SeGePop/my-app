@@ -3,7 +3,7 @@ import profile from "./images/profile.jpg";
 import clock from "./images/25+5_clock.jpg";
 import calculator from "./images/calculator.jpeg";
 import drum_machine from "./images/drum_machine.jpeg";
-import random_quote from "./images/random_quote.jpeg"
+import random_quote from "./images/random_quote.jpeg";
 import "./App.css";
 import React, { useState } from "react";
 import { SocialIcon } from "react-social-icons";
@@ -19,14 +19,6 @@ function Navbar() {
   return (
     <div class="topbar">
       <div className="topnav">
-        <img loading="lazy" src={logo} alt="Segepop" class="logo" />
-        <a
-          href="#contact_content"
-          className={`btn ${activeButton === "CONTACT" ? "active" : ""}`}
-          onClick={() => handleButtonClick("CONTACT")}
-        >
-          CONTACT
-        </a>
         <a
           href="#home_content"
           className={`btn ${activeButton === "HOME" ? "active" : ""}`}
@@ -35,13 +27,21 @@ function Navbar() {
           HOME
         </a>
         <a
+          href="#contact_content"
+          className={`btn ${activeButton === "CONTACT" ? "active" : ""}`}
+          onClick={() => handleButtonClick("CONTACT")}
+        >
+          CONTACT
+        </a>
+
+        <a
           href="#projects_content"
           className={`btn ${activeButton === "PROJECTS" ? "active" : ""}`}
           onClick={() => handleButtonClick("PROJECTS")}
         >
           PROJECTS
         </a>
-        
+        <img loading="lazy" src={logo} alt="Segepop" class="logo" />
       </div>
     </div>
   );
@@ -59,7 +59,8 @@ function Home() {
         I am a web developer from Romania and currently living in Bihor county.
         I enjoy building everything from small business sites to rich
         interactive web apps. If you are a business seeking a web presence or an
-        employer you can get in touch with me <a href="#contact_content">here</a>.
+        employer you can get in touch with me{" "}
+        <a href="#contact_content">here</a>.
       </p>
       <p>
         After 10 years of working as a mechanical engineer, working in both 2D
@@ -83,28 +84,40 @@ function Projects() {
       <h1>Projects</h1>
       <div class="gallery">
         <a target="_blank" href="https://github.com/SeGePop/25-5-Clock">
-          <img loading="lazy" src={clock} alt="25+5 Clock"/>
+          <img loading="lazy" src={clock} alt="25+5 Clock" />
         </a>
-        <div class="desc">Keep track of your time studying, and when to take a break.</div>
+        <div class="desc">
+          Keep track of your time studying, and when to take a break.
+        </div>
       </div>
 
       <div class="gallery">
         <a target="_blank" href="https://github.com/SeGePop/JSCalculator">
-          <img loading="lazy" class="image" src={calculator} alt="Calculator"/>
+          <img loading="lazy" class="image" src={calculator} alt="Calculator" />
         </a>
-        <div class="desc">Working Calculator build from scratch using JavaScript</div>
+        <div class="desc">
+          Working Calculator build from scratch using JavaScript
+        </div>
       </div>
 
       <div class="gallery">
         <a target="_blank" href="https://github.com/SeGePop/DrumMachine">
-          <img loading="lazy" class="image" src={drum_machine} alt="Drum Machine"/>
+          <img
+            loading="lazy"
+            class="image"
+            src={drum_machine}
+            alt="Drum Machine"
+          />
         </a>
         <div class="desc">Keyboard and Mouse activated drum machine</div>
       </div>
 
       <div class="gallery">
-        <a target="_blank" href="https://github.com/SeGePop/RandomQuoteGenerator">
-          <img loading="lazy" src={random_quote} alt="Random Quote Generator"/>
+        <a
+          target="_blank"
+          href="https://github.com/SeGePop/RandomQuoteGenerator"
+        >
+          <img loading="lazy" src={random_quote} alt="Random Quote Generator" />
         </a>
         <div class="desc">A random quote generator</div>
       </div>
@@ -135,8 +148,7 @@ function Contact() {
                 </li>
               </ul>
 
-              <div class="contacts-element">                
-              </div>
+              <div class="contacts-element"></div>
               <div>
                 <span class="contacts-item">E: </span>
                 <a

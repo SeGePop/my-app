@@ -69,6 +69,22 @@ class App extends React.Component {
           sessionLength: "25:00",
           breakLength: "05:00",
           display: "Session",
+          breakOrSession: 0,
+        });
+        if (this.state.playPause === 0) {
+          this.setState({
+            displayBorS: "25:00",
+          });
+        }
+        document.getElementById("beep").pause();
+        document.getElementById("beep").currentTime = 0;
+        if (this.state.playPause === 1) {
+          clearInterval(this.timer);
+        }
+        this.setState({
+          sessionLength: "25:00",
+          breakLength: "05:00",
+          display: "Session",
           displayBorS: "25:00",
           playPause: 0,
           breakOrSession: 0,
@@ -130,25 +146,6 @@ class App extends React.Component {
           }
           break;
         }
-      case "reset":
-        if (this.state.playPause === 1) {
-          clearInterval(this.timer);
-        }
-        this.setState({
-          sessionLength: "25:00",
-          breakLength: "05:00",
-          display: "Session",
-          breakOrSession: 0,
-        });
-        if (this.state.playPause === 0) {
-          this.setState({
-            displayBorS: "25:00",
-          });
-        }
-        document.getElementById("beep").pause();
-        document.getElementById("beep").currentTime = 0;
-        break;
-
       case "session-increment":
         if (this.state.sessionLength.split(":")[0] < 60) {
           // checks if session is under an hour
@@ -270,6 +267,7 @@ class App extends React.Component {
           <a
             href="https://www.linkedin.com/in/sergiu-george-pop-0a9097260/"
             target="_blank"
+            rel="noreferrer"
           >
             Pop Sergiu
           </a>
