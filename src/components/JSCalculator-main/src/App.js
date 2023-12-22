@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./styles.css";
 
 export function App() {
@@ -9,7 +9,7 @@ export function App() {
   // 1 - current number is a decimal
   const [equals, setEquals] = useState("false");
   const handleClick = (e) => {
-    if (equals == true && !isNaN(e.target.name)) {
+    if (equals === true && !isNaN(e.target.name)) {
       setResult(e.target.name);
       setFormula("0");
       setEquals("false");
@@ -58,7 +58,7 @@ export function App() {
       setResult(
         eval(
           result.replace(/\*\+/g, (match) => {
-            if (match == "*+") return "+";
+            if (match === "*+") return "+";
             return match;
           }),
         )
