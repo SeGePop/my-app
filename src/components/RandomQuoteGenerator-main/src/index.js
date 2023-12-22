@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles.css";
-import { App } from "./App";
+import { App } from "./RandomQuoteGenerator_App";
 
 export function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;

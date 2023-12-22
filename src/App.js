@@ -26,13 +26,7 @@ function Navbar() {
         >
           HOME
         </a>
-        <a
-          href="#contact_content"
-          className={`btn ${activeButton === "CONTACT" ? "active" : ""}`}
-          onClick={() => handleButtonClick("CONTACT")}
-        >
-          CONTACT
-        </a>
+        
 
         <a
           href="#projects_content"
@@ -40,6 +34,14 @@ function Navbar() {
           onClick={() => handleButtonClick("PROJECTS")}
         >
           PROJECTS
+        </a>
+        
+        <a
+          href="#contact_content"
+          className={`btn ${activeButton === "CONTACT" ? "active" : ""}`}
+          onClick={() => handleButtonClick("CONTACT")}
+        >
+          CONTACT
         </a>
         <img loading="lazy" src={logo} alt="Segepop" class="logo" />
       </div>
@@ -71,7 +73,7 @@ function Home() {
       </p>
       <div class="home_email">
         <a href="mailto:sergiugeorgepop@gmail.com" id="home_mail">
-          I'm looking to hire <strong>&#10132;</strong>
+          Let's discuss via e-mail<strong>&#10132;</strong>
         </a>
       </div>
     </section>
@@ -96,7 +98,7 @@ function Projects() {
           <img loading="lazy" class="image" src={calculator} alt="Calculator" />
         </a>
         <div class="desc">
-          Working Calculator build from scratch using JavaScript
+          Working Calculator built from scratch using JavaScript
         </div>
       </div>
 
