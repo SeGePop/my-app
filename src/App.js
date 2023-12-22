@@ -133,11 +133,7 @@ function Contact() {
                 </li>
               </ul>
 
-              <div class="contacts-element">
-                <span class="contacts-item">C: </span>
-                <a href="tel:+400770113529" class="contacts-phone">
-                  +40 0770 113 529
-                </a>
+              <div class="contacts-element">                
               </div>
               <div>
                 <span class="contacts-item">E: </span>
