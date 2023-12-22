@@ -1,0 +1,109 @@
+/* Extra small devices (phones) */
+@media only screen and (max-width: 480px) {
+  /* CSS declarations */
+}
+
+/* Small devices (tablets) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* CSS declarations */
+}
+
+/* Medium devices (laptops) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* CSS declarations */
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  /* CSS declarations */
+}
+
+/* Extra large devices (large desktops, TV) */
+@media only screen and (min-width: 1201px) {
+  /* CSS declarations */
+}
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+html,
+body {
+  height: 100%;
+  user-select: none;
+}
+body {
+  font-family: sans-serif;
+  background-color: lightgrey;
+  color: white;
+  text-align: center;
+}
+
+.app-wrapper {
+  background-color: rgb(15, 174, 174);
+  padding: 20px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  width: 100vw;
+}
+
+.break-container {
+  font-size: 30px;
+}
+
+.session-container {
+  font-size: 30px;
+}
+
+.timer-container {
+  width: 100vw;
+  margin-top: 50px;
+  font-size: 30px;
+  border: solid;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.buttons {
+  padding-top: 10px;
+  fill: white;
+  width: 50px;
+  height: 50px;
+}
+.buttons:active {
+  fill: lightgray;
+  width: 49px;
+  height: 49px;
+}
+
+.timer-buttons {
+  display: flex;
+  flex-direction: row;
+}
+#time-left {
+  font-size: 50px;
+}
+#start_stop {
+  flex: 1;
+}
+#reset {
+  flex: 1;
+}
+
+/* footer */
+footer {
+  position: fixed;
+  bottom: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}

@@ -28,19 +28,20 @@ function Navbar() {
           CONTACT
         </a>
         <a
-          href="#projects_content"
-          className={`btn ${activeButton === "PROJECTS" ? "active" : ""}`}
-          onClick={() => handleButtonClick("PROJECTS")}
-        >
-          PROJECTS
-        </a>
-        <a
           href="#home_content"
           className={`btn ${activeButton === "HOME" ? "active" : ""}`}
           onClick={() => handleButtonClick("HOME")}
         >
           HOME
         </a>
+        <a
+          href="#projects_content"
+          className={`btn ${activeButton === "PROJECTS" ? "active" : ""}`}
+          onClick={() => handleButtonClick("PROJECTS")}
+        >
+          PROJECTS
+        </a>
+        
       </div>
     </div>
   );

@@ -101,6 +101,8 @@ body {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   background-color: var(--background);
+  display: flex;
+  justify-content: space-between;
   z-index: 10;
 }
 
@@ -114,6 +116,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
+  align-items: center;
+  justify-content: center;
 }
 
 /* Change the color of links on hover */
@@ -221,7 +226,7 @@ div.gallery {
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  border: solid white;
 }
 
 div.gallery img {
