@@ -1,5 +1,9 @@
 import logo from "./images/logo.png";
 import profile from "./images/profile.jpg";
+import clock from "./images/25+5_clock.jpg";
+import calculator from "./images/calculator.jpeg";
+import drum_machine from "./images/drum_machine.jpeg";
+import random_quote from "./images/random_quote.jpeg"
 import "./App.css";
 import React, { useState } from "react";
 import { SocialIcon } from "react-social-icons";
@@ -75,18 +79,33 @@ function Home() {
 function Projects() {
   return (
     <section class="projects_content" id="projects_content">
-      <input type="radio" name="position" checked />
-      <input type="radio" name="position" />
-      <input type="radio" name="position" />
-      <input type="radio" name="position" />
-      <input type="radio" name="position" />
-      <main id="carousel">
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-      </main>
+      <div class="gallery">
+        <a target="_blank" href="https://github.com/SeGePop/25-5-Clock">
+          <img src={clock} alt="25+5 Clock"/>
+        </a>
+        <div class="desc">Keep track of your time studying, and when to take a break.</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="https://github.com/SeGePop/JSCalculator">
+          <img class="image" src={calculator} alt="Calculator"/>
+        </a>
+        <div class="desc">Working Calculator build from scratch using JavaScript</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="https://github.com/SeGePop/DrumMachine">
+          <img class="image" src={drum_machine} alt="Drum Machine"/>
+        </a>
+        <div class="desc">Keyboard and Mouse activated drum machine</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="https://github.com/SeGePop/RandomQuoteGenerator">
+          <img src={random_quote} alt="Random Quote Generator"/>
+        </a>
+        <div class="desc">A random quote generator</div>
+      </div>
     </section>
   );
 }
@@ -99,60 +118,65 @@ function Contact() {
         <div class="contacts-container">
           <h1>Get in touch!</h1>
           <div class="columns">
-          <div class="left_column">
-          <h1>How Can I Help You?</h1>
-          <ul>
-            <li><i>Hiring?</i> Let’s discuss your project requirements, goals, and timeline. I’m excited to collaborate and create something amazing together.</li>
-            <p></p>
-            <li><i>Contracting?</i> Need a reliable developer for a specific task or ongoing support? Look no further—I’m here to assist.</li>
-          </ul>
-          
-<div class="contacts-element">
-            <span class="contacts-item">C: </span>
-            <a href="tel:+400770113529" class="contacts-phone">
-              +40 0770 113 529
-            </a>
-          </div>
-          <div>
-            <span class="contacts-item">E: </span>
-            <a href="mailto:sergiugeorgepop@gmail.com" class="contacts-email">
-              sergiugeorgepop@gmail.com
-            </a>
-          </div>
-        </div>
-        
+            <div class="left_column">
+              <h1>How Can I Help You?</h1>
+              <ul>
+                <li>
+                  <i>Hiring?</i> Let’s discuss your project requirements, goals,
+                  and timeline. I’m excited to collaborate and create something
+                  amazing together.
+                </li>
+                <p></p>
+                <li>
+                  <i>Contracting?</i> Need a reliable developer for a specific
+                  task or ongoing support? Look no further—I’m here to assist.
+                </li>
+              </ul>
+
+              <div class="contacts-element">
+                <span class="contacts-item">C: </span>
+                <a href="tel:+400770113529" class="contacts-phone">
+                  +40 0770 113 529
+                </a>
+              </div>
+              <div>
+                <span class="contacts-item">E: </span>
+                <a
+                  href="mailto:sergiugeorgepop@gmail.com"
+                  class="contacts-email"
+                >
+                  sergiugeorgepop@gmail.com
+                </a>
+              </div>
+            </div>
           </div>
           <div class="social_buttons">
             <div></div>
-        <SocialIcon
-          style={{ height: 80, width: 80 }}
-            bgColor="#047690"
-            fgColor="white"
-            url="https://linkedin.com"
-            href="https://www.linkedin.com/in/sergiu-george-pop-0a9097260/"
-          />
-          <SocialIcon
-          style={{ height: 80, width: 80 }}
-            bgColor="#047690"
-            fgColor="white"
-            network="github"
-            href="https://github.com/SeGePop"
-          />
-          <SocialIcon
-          style={{ height: 80, width: 80 }}
-            bgColor="#047690"
-            fgColor="white"
-            url="https://twitter.com"
-            href="https://twitter.com/SeGePop"
-          />  
-          <div></div>
+            <SocialIcon
+              style={{ height: 80, width: 80 }}
+              bgColor="#047690"
+              fgColor="white"
+              url="https://linkedin.com"
+              href="https://www.linkedin.com/in/sergiu-george-pop-0a9097260/"
+            />
+            <SocialIcon
+              style={{ height: 80, width: 80 }}
+              bgColor="#047690"
+              fgColor="white"
+              network="github"
+              href="https://github.com/SeGePop"
+            />
+            <SocialIcon
+              style={{ height: 80, width: 80 }}
+              bgColor="#047690"
+              fgColor="white"
+              url="https://twitter.com"
+              href="https://twitter.com/SeGePop"
+            />
+            <div></div>
           </div>
-          <div class="right_column">
+          <div class="right_column"></div>
         </div>
-          </div>
-          
-          
-
       </div>
     </section>
   );
