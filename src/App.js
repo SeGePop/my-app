@@ -19,7 +19,7 @@ function Navbar() {
   return (
     <div class="topbar">
       <div className="topnav">
-        <img src={logo} alt="Segepop" class="logo" />
+        <img loading="lazy" src={logo} alt="Segepop" class="logo" />
         <a
           href="#contact_content"
           className={`btn ${activeButton === "CONTACT" ? "active" : ""}`}
@@ -50,15 +50,15 @@ function Navbar() {
 function Home() {
   return (
     <section class="home_content" id="home_content">
-      <img src={profile} alt="profile" class="circle" />
-      <h1>User friendly, user first websites.</h1>
+      <img loading="lazy" src={profile} alt="profile" class="circle" />
+      <h2>User friendly, user first websites.</h2>
       Hello! My name is <span>Pop Sergiu George</span>, and welcome to my
       website!
       <p>
         I am a web developer from Romania and currently living in Bihor county.
         I enjoy building everything from small business sites to rich
         interactive web apps. If you are a business seeking a web presence or an
-        employer you can get in touch with me <a href="#contact">here</a>.
+        employer you can get in touch with me <a href="#contact_content">here</a>.
       </p>
       <p>
         After 10 years of working as a mechanical engineer, working in both 2D
@@ -79,30 +79,31 @@ function Home() {
 function Projects() {
   return (
     <section class="projects_content" id="projects_content">
+      <h2>Projects</h2>
       <div class="gallery">
         <a target="_blank" href="https://github.com/SeGePop/25-5-Clock">
-          <img src={clock} alt="25+5 Clock"/>
+          <img loading="lazy" src={clock} alt="25+5 Clock"/>
         </a>
         <div class="desc">Keep track of your time studying, and when to take a break.</div>
       </div>
 
       <div class="gallery">
         <a target="_blank" href="https://github.com/SeGePop/JSCalculator">
-          <img class="image" src={calculator} alt="Calculator"/>
+          <img loading="lazy" class="image" src={calculator} alt="Calculator"/>
         </a>
         <div class="desc">Working Calculator build from scratch using JavaScript</div>
       </div>
 
       <div class="gallery">
         <a target="_blank" href="https://github.com/SeGePop/DrumMachine">
-          <img class="image" src={drum_machine} alt="Drum Machine"/>
+          <img loading="lazy" class="image" src={drum_machine} alt="Drum Machine"/>
         </a>
         <div class="desc">Keyboard and Mouse activated drum machine</div>
       </div>
 
       <div class="gallery">
         <a target="_blank" href="https://github.com/SeGePop/RandomQuoteGenerator">
-          <img src={random_quote} alt="Random Quote Generator"/>
+          <img loading="lazy" src={random_quote} alt="Random Quote Generator"/>
         </a>
         <div class="desc">A random quote generator</div>
       </div>
@@ -116,7 +117,7 @@ function Contact() {
     <section class="contact_content" id="contact_content">
       <div class="contact_info">
         <div class="contacts-container">
-          <h1>Get in touch!</h1>
+          <h2>Get in touch!</h2>
           <div class="columns">
             <div class="left_column">
               <h1>How Can I Help You?</h1>

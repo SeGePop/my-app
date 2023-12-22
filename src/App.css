@@ -204,6 +204,9 @@ a {
   justify-content: center;
   gap:20px;
 }
+.projects_content>h2{
+  font-size:0;
+}
 
 div.gallery {
   background-image: linear-gradient(var(--body_background), var(--background));
