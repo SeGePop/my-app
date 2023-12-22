@@ -47,6 +47,7 @@ export class App extends React.Component {
             id="tweet-quote"
             href={`https://twitter.com/intent/tweet?text=${this.state.quote}+${this.state.author}`}
             target="_blank"
+            rel="noreferrer"
           >
             <FontAwesomeIcon icon={faTwitter} />
           </a>
@@ -55,6 +56,7 @@ export class App extends React.Component {
             id="tumblr_icon"
             href={`https://twitter.com/intent/tweet?text=${this.state.quote}+${this.state.author}`}
             target="_blank"
+            rel="noreferrer"
           >
             <FontAwesomeIcon icon={faTumblr} />
           </a>
