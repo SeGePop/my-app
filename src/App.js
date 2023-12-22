@@ -2,6 +2,7 @@ import logo from "./images/logo.png";
 import profile from "./images/profile.jpg";
 import "./App.css";
 import React, { useState } from "react";
+import { SocialIcon } from "react-social-icons";
 
 // NAVBAR
 function Navbar() {
@@ -94,25 +95,64 @@ function Projects() {
 function Contact() {
   return (
     <section class="contact_content" id="contact_content">
-      
       <div class="contact_info">
-          <div class="contacts-container">
-            <h3 class="contacts-header">Contacts</h3>
-            <div class="contacts-element">
-              <span class="contacts-item">C: </span>
-              <a href="tel:+400770113529" class="contacts-phone">
-                +40 0770 113 529
-              </a>
-            </div>
-            <div>
-              <span class="contacts-item">E: </span>
-              <a href="mailto:sergiugeorgepop@gmail.com" class="contacts-email">
-                sergiugeorgepop@gmail.com
-              </a>
-            </div>
+        <div class="contacts-container">
+          <h1>Get in touch!</h1>
+          <div class="columns">
+          <div class="left_column">
+          <h1>How Can I Help You?</h1>
+          <ul>
+            <li><i>Hiring?</i> Let’s discuss your project requirements, goals, and timeline. I’m excited to collaborate and create something amazing together.</li>
+            <p></p>
+            <li><i>Contracting?</i> Need a reliable developer for a specific task or ongoing support? Look no further—I’m here to assist.</li>
+          </ul>
           
+<div class="contacts-element">
+            <span class="contacts-item">C: </span>
+            <a href="tel:+400770113529" class="contacts-phone">
+              +40 0770 113 529
+            </a>
+          </div>
+          <div>
+            <span class="contacts-item">E: </span>
+            <a href="mailto:sergiugeorgepop@gmail.com" class="contacts-email">
+              sergiugeorgepop@gmail.com
+            </a>
+          </div>
         </div>
-          <div class="social_buttons"></div>
+        
+          </div>
+          <div class="social_buttons">
+            <div></div>
+        <SocialIcon
+          style={{ height: 80, width: 80 }}
+            bgColor="#047690"
+            fgColor="white"
+            url="https://linkedin.com"
+            href="https://www.linkedin.com/in/sergiu-george-pop-0a9097260/"
+          />
+          <SocialIcon
+          style={{ height: 80, width: 80 }}
+            bgColor="#047690"
+            fgColor="white"
+            network="github"
+            href="https://github.com/SeGePop"
+          />
+          <SocialIcon
+          style={{ height: 80, width: 80 }}
+            bgColor="#047690"
+            fgColor="white"
+            url="https://twitter.com"
+            href="https://twitter.com/SeGePop"
+          />  
+          <div></div>
+          </div>
+          <div class="right_column">
+        </div>
+          </div>
+          
+          
+
       </div>
     </section>
   );
