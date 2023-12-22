@@ -27,7 +27,7 @@ class App extends React.Component {
     let seconds = minutes * 60;
     this.interval = setInterval(() => {
       seconds--;
-      if (seconds < 0 && this.state.breakOrSession == 0) {
+      if (seconds < 0 && this.state.breakOrSession === 0) {
         // check if it's a session
         clearInterval(this.interval);
         document.getElementById("beep").play();
@@ -39,7 +39,7 @@ class App extends React.Component {
         });
         // change type from session to break
         this.countdown(parseInt(this.state.displayBorS.split(":"[0])));
-      } else if (seconds < 0 && this.state.breakOrSession == 1) {
+      } else if (seconds < 0 && this.state.breakOrSession === 1) {
         // // check if it's a break
         clearInterval(this.interval);
         document.getElementById("beep").play();
@@ -96,56 +96,55 @@ class App extends React.Component {
       // resets timer to 25:00
 
       case "start_stop":
-        if (this.state.firstTime == 1) {
+        if (this.state.firstTime === 1) {
           this.setState({
             displayBorS: this.state.sessionLength,
             firstTime: 0,
           });
         }
-        {
-          if (this.state.playPause === 0) {
-            this.setState({
-              playPause: 1,
-            });
-            this.timer = setInterval(() => {
-              let minutes = parseInt(this.state.displayBorS.split(":")[0]);
-              let seconds = parseInt(this.state.displayBorS.split(":")[1]);
-              if (minutes === 0 && seconds === 0) {
-                document.getElementById("beep").play();
-                this.setState({
-                  breakOrSession: this.state.breakOrSession === 0 ? 1 : 0,
-                });
-                this.setState({
-                  displayBorS:
-                    this.state.breakOrSession === 0
-                      ? this.state.sessionLength
-                      : this.state.breakLength,
-                });
-                this.setState({
-                  display:
-                    this.state.breakOrSession === 0 ? "Session" : "Break",
-                });
-              } else {
-                seconds--;
-                if (seconds < 0) {
-                  seconds = 59;
-                  minutes--;
-                }
-                this.setState({
-                  displayBorS: `${minutes.toString().padStart(2, "0")}:${seconds
-                    .toString()
-                    .padStart(2, "0")}`,
-                });
+
+        if (this.state.playPause === 0) {
+          this.setState({
+            playPause: 1,
+          });
+          this.timer = setInterval(() => {
+            let minutes = parseInt(this.state.displayBorS.split(":")[0]);
+            let seconds = parseInt(this.state.displayBorS.split(":")[1]);
+            if (minutes === 0 && seconds === 0) {
+              document.getElementById("beep").play();
+              this.setState({
+                breakOrSession: this.state.breakOrSession === 0 ? 1 : 0,
+              });
+              this.setState({
+                displayBorS:
+                  this.state.breakOrSession === 0
+                    ? this.state.sessionLength
+                    : this.state.breakLength,
+              });
+              this.setState({
+                display: this.state.breakOrSession === 0 ? "Session" : "Break",
+              });
+            } else {
+              seconds--;
+              if (seconds < 0) {
+                seconds = 59;
+                minutes--;
               }
-            }, 1000);
-          } else {
-            this.setState({
-              playPause: 0,
-            });
-            clearInterval(this.timer);
-          }
-          break;
+              this.setState({
+                displayBorS: `${minutes.toString().padStart(2, "0")}:${seconds
+                  .toString()
+                  .padStart(2, "0")}`,
+              });
+            }
+          }, 1000);
+        } else {
+          this.setState({
+            playPause: 0,
+          });
+          clearInterval(this.timer);
         }
+        break;
+
       case "session-increment":
         if (this.state.sessionLength.split(":")[0] < 60) {
           // checks if session is under an hour
