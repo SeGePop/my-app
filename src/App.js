@@ -26,7 +26,6 @@ function Navbar() {
         >
           HOME
         </a>
-        
 
         <a
           href="#projects_content"
@@ -35,7 +34,7 @@ function Navbar() {
         >
           PROJECTS
         </a>
-        
+
         <a
           href="#contact_content"
           className={`btn ${activeButton === "CONTACT" ? "active" : ""}`}
@@ -70,18 +69,14 @@ function Home() {
         a 3 month long project coordinating up to 10 people, I have decided to
         shift my focus on what I've always been passionate about, telling
         computers what to do and how to think.
-        
         <div class="warning">
-        <p>
-        <strong>THIS WEBSITE IS UNDER DEVELOPMENT!</strong>
-        </p>
-        <p>
-        <strong>HAPPY HOLIDAYS!</strong>
-        </p>
+          <p>
+            <strong>THIS WEBSITE IS UNDER DEVELOPMENT!</strong>
+          </p>
+          <p>
+            <strong>HAPPY HOLIDAYS!</strong>
+          </p>
         </div>
-        
-        
-        
       </p>
       <div class="home_email">
         <a href="mailto:sergiugeorgepop@gmail.com" id="home_mail">
@@ -102,6 +97,16 @@ function Projects() {
         </a>
         <div class="desc">
           Keep track of your time studying, and when to take a break.
+          <br></br>
+          <br></br>
+          <SocialIcon
+              style={{ height: 80, width: 80 }}
+              bgColor="#047690"
+              fgColor="white"
+              network="github"
+              href="https://github.com/SeGePop/25-5-Clock"
+              target="_blank"
+            />
         </div>
       </div>
 
@@ -111,6 +116,16 @@ function Projects() {
         </a>
         <div class="desc">
           Working Calculator built from scratch using JavaScript
+          <br></br>
+          <br></br>
+          <SocialIcon
+              style={{ height: 80, width: 80 }}
+              bgColor="#047690"
+              fgColor="white"
+              network="github"
+              href="https://github.com/SeGePop/JSCalculator"
+              target="_blank"
+            />
         </div>
       </div>
 
@@ -123,17 +138,38 @@ function Projects() {
             alt="Drum Machine"
           />
         </a>
-        <div class="desc">Keyboard and Mouse activated drum machine</div>
+        <div class="desc">
+          Keyboard and Mouse activated drum machine
+          <br></br>
+          <br></br>
+          <SocialIcon
+              style={{ height: 80, width: 80 }}
+              bgColor="#047690"
+              fgColor="white"
+              network="github"
+              href="https://github.com/SeGePop/DrumMachine"
+              target="_blank"
+            />
+        </div>
       </div>
 
       <div class="gallery">
-        <a
-          target="_blank"
-          href="/randomquotes"
-        >
+        <a target="_blank" href="/randomquotes">
           <img loading="lazy" src={random_quote} alt="Random Quote Generator" />
         </a>
-        <div class="desc">A random quote generator</div>
+        <div class="desc">
+          A random quote generator
+          <br></br>
+          <br></br>
+          <SocialIcon
+              style={{ height: 80, width: 80 }}
+              bgColor="#047690"
+              fgColor="white"
+              network="github"
+              href="https://github.com/SeGePop/RandomQuoteGenerator"
+              target="_blank"
+            />
+        </div>
       </div>
     </section>
   );
