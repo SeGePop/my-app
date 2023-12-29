@@ -97,7 +97,7 @@ function Projects() {
     <section class="projects_content" id="projects_content">
       <h1>Projects</h1>
       <div class="gallery">
-        <a target="_blank" href="https://github.com/SeGePop/25-5-Clock">
+        <a target="_blank" href="/clock">
           <img loading="lazy" src={clock} alt="25+5 Clock" />
         </a>
         <div class="desc">
@@ -106,7 +106,7 @@ function Projects() {
       </div>
 
       <div class="gallery">
-        <a target="_blank" href="https://github.com/SeGePop/JSCalculator">
+        <a target="_blank" href="/calculator">
           <img loading="lazy" class="image" src={calculator} alt="Calculator" />
         </a>
         <div class="desc">
@@ -115,7 +115,7 @@ function Projects() {
       </div>
 
       <div class="gallery">
-        <a target="_blank" href="https://github.com/SeGePop/DrumMachine">
+        <a target="_blank" href="/drum">
           <img
             loading="lazy"
             class="image"
@@ -129,7 +129,7 @@ function Projects() {
       <div class="gallery">
         <a
           target="_blank"
-          href="https://github.com/SeGePop/RandomQuoteGenerator"
+          href="/randomquotes"
         >
           <img loading="lazy" src={random_quote} alt="Random Quote Generator" />
         </a>

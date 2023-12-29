@@ -1,46 +1,11 @@
-/* Extra small devices (phones) */
-@media only screen and (max-width: 480px) {
-  /* CSS declarations */
-}
-
-/* Small devices (tablets) */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* CSS declarations */
-}
-
-/* Medium devices (laptops) */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  /* CSS declarations */
-}
-
-/* Large devices (desktops) */
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
-  /* CSS declarations */
-}
-
-/* Extra large devices (large desktops, TV) */
-@media only screen and (min-width: 1201px) {
-  /* CSS declarations */
-}
-#root {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-html,
-body {
-  height: 100%;
-  user-select: none;
-}
-body {
+.app-wrapper {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   font-family: sans-serif;
   background-color: lightgrey;
   color: white;
   text-align: center;
-}
-
-.app-wrapper {
   background-color: rgb(15, 174, 174);
   padding: 20px;
   width: 500px;
@@ -49,6 +14,9 @@ body {
   flex-wrap: wrap;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  height: 91vh;
 }
 
 .title {
@@ -98,11 +66,6 @@ body {
   flex: 1;
 }
 
-/* footer */
-footer {
-  position: fixed;
-  bottom: 0;
-}
 a {
   text-decoration: none;
   color: white;

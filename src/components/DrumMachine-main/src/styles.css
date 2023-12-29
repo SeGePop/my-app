@@ -1,8 +1,6 @@
-html {
-  background-color: rgb(71, 87, 90);
-}
 
-.App {
+.DrumMachineApp {
+  background-color: rgb(71, 87, 90);
   font-family: sans-serif;
   text-align: center;
   display: grid;

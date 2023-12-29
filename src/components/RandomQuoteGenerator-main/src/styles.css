@@ -1,4 +1,4 @@
-// CSS
+
 :root {
   --background-color: rgb(7, 234, 128);
 }
@@ -13,7 +13,11 @@
   left: 150px;
 }
 
-html {
+.RQG_App {
+  height:100%;
+  width:auto;
+  z-index: 100;
+  color:red;
   background-color: var(--background-color, rgb(7, 234, 128));
 }
 

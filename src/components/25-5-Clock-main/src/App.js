@@ -259,18 +259,7 @@ class App extends React.Component {
               <ReplayIcon className="buttons" />
             </div>
           </div>
-        </div>
-        {/* Footer Section */}
-        <footer>
-          Designed and Coded by{" "}
-          <a
-            href="https://www.linkedin.com/in/sergiu-george-pop-0a9097260/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Pop Sergiu
-          </a>
-        </footer>
+        </div>        
       </div>
     );
   }

@@ -1,18 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
 
-.App {
+.JSCalculator_App {
   font-family: "Orbitron";
   text-align: center;
   width: 400px;
   margin: auto;
   border: solid 10px black;
-}
-
-html {
   font-family: "Orbitron";
   background-color: grey;
 }
-#display,#displayFormula,
+
+#JSCalculatordisplay,#displayFormula,
 #formula {
   font-family: "Orbitron";
   text-align: right;
@@ -22,7 +20,7 @@ html {
   height: 50px;
   color:white;
 }
-#JSCalculator {
+#JSCalculator_App {
   font-family: "Orbitron";
   background-color: black;
   color: white;

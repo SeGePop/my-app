@@ -68,7 +68,7 @@ export class DrumMachine_App extends React.Component {
 
   render() {
     return (
-      <div className="App" id="drum-machine">
+      <div className="DrumMachineApp" id="drum-machine">
         <p id="display">{this.state.editor}</p>
 
         <div

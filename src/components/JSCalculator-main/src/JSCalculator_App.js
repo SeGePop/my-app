@@ -73,9 +73,9 @@ export function JSCalculator_App() {
   };
 
   return (
-    <div className="App">
+    <div className="JSCalculator_App">
       <form>
-        <p id="display" style={{ color: "orange" }}>
+        <p id="JSCalculatordisplay" style={{ color: "orange" }}>
           {result}
         </p>
         {/* shows result once = is hit */}
@@ -137,10 +137,6 @@ export function JSCalculator_App() {
           =
         </button>
       </div>
-      <footer>Designed and Coded by</footer>
-      <a href="https://www.linkedin.com/in/sergiu-george-pop-0a9097260/">
-        Segepop
-      </a>
     </div>
   );
 }
