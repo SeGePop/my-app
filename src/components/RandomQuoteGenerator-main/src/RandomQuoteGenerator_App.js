@@ -1,8 +1,6 @@
 import React from "react";
 import "./styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faTumblr } from "@fortawesome/free-brands-svg-icons";
 
 function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -90,22 +88,7 @@ class RandomQuoteGenerator_App extends React.Component {
       <div className="RandomQuoteGenerator_App">
         <div className="quote-box" id="quote-box">
           <div className="social-media-buttons">
-            <a
-              title="Tweet it!"
-              id="tweet-quote"
-              href={`https://twitter.com/intent/tweet?text=${this.state.quote}+${this.state.author}`}
-              target="_blank"
-            >
-              <FontAwesomeIcon icon={faTwitter} />
-            </a>
-            <a
-              title="Post it on Tumblr!"
-              id="tumblr_icon"
-              href={`https://tumblr.com/intent/tweet?text=${this.state.quote}+${this.state.author}`}
-              target="_blank"
-            >
-              <FontAwesomeIcon icon={faTumblr} />
-            </a>
+            
           </div>
           <div className="text" id="text">
             {this.state.quote}
