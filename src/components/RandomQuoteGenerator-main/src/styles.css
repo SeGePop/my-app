@@ -3,21 +3,19 @@
   --background-color: rgb(7, 234, 128);
 }
 
-#app {
+.app {
   font-family: Lato, Arial, Georgia;
+  height:200px;
 }
 
-#page-author {
+.page-author {
   position: absolute;
   bottom: -50px;
   left: 150px;
 }
 
-.RQG_App {
-  height:100%;
-  width:auto;
-  z-index: 100;
-  color:red;
+.RandomQuoteGenerator_App {
+  height:100vh;
   background-color: var(--background-color, rgb(7, 234, 128));
 }
 

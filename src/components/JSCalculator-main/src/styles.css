@@ -8,6 +8,7 @@
   border: solid 10px black;
   font-family: "Orbitron";
   background-color: grey;
+  height:100vh;
 }
 
 #JSCalculatordisplay,#displayFormula,

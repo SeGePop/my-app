@@ -1,13 +1,15 @@
-import React from 'react';
+import React from "react";
 import "./styles.css";
-import { SocialIcon } from "react-social-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faTumblr } from "@fortawesome/free-brands-svg-icons";
 
- function getRandomNumber(min, max) {
+function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 // random number generator
- function getRandomColor() {
+function getRandomColor() {
   const colors = [
     "#FFC0CB", // Pink
     "#FFD700", // Gold
@@ -18,35 +20,35 @@ import { SocialIcon } from "react-social-icons";
     "#00FF7F", // Spring Green
     "#ADD8E6", // Light Blue
     "#F08080", // Light Coral
-    "#90EE90" // Light Green
+    "#90EE90", // Light Green
   ];
   return colors[Math.floor(Math.random() * colors.length)];
 }
 
 // get random color code
 
- const quotes = [
+const quotes = [
   {
     quote: "Be the change you wish to see in the world.",
-    author: "Mahatma Gandhi"
+    author: "Mahatma Gandhi",
   },
   {
     quote: "The only way to do great work is to love what you do.",
-    author: "Steve Jobs"
+    author: "Steve Jobs",
   },
   {
     quote:
       "In three words I can sum up everything I've learned about life: it goes on.",
-    author: "Robert Frost"
+    author: "Robert Frost",
   },
   {
     quote: "You miss 100% of the shots you don't take.",
-    author: "Wayne Gretzky"
+    author: "Wayne Gretzky",
   },
   {
     quote: "I have not failed. I've just found 10,000 ways that won't work.",
-    author: "Thomas Edison"
-  }
+    author: "Thomas Edison",
+  },
 ];
 
 class RandomQuoteGenerator_App extends React.Component {
@@ -87,6 +89,24 @@ class RandomQuoteGenerator_App extends React.Component {
     return (
       <div className="RandomQuoteGenerator_App">
         <div className="quote-box" id="quote-box">
+          <div className="social-media-buttons">
+            <a
+              title="Tweet it!"
+              id="tweet-quote"
+              href={`https://twitter.com/intent/tweet?text=${this.state.quote}+${this.state.author}`}
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
+            <a
+              title="Post it on Tumblr!"
+              id="tumblr_icon"
+              href={`https://tumblr.com/intent/tweet?text=${this.state.quote}+${this.state.author}`}
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faTumblr} />
+            </a>
+          </div>
           <div className="text" id="text">
             {this.state.quote}
           </div>
