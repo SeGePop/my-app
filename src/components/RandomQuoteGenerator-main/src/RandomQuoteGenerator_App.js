@@ -1,6 +1,5 @@
 import React from "react";
 import "./styles.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -52,6 +51,10 @@ const quotes = [
 class RandomQuoteGenerator_App extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      quote: quotes[0].quote,
+      author: quotes[0].author,
+    };
     if (quotes.length === 0) {
       this.state = {
         quote: quotes[0].quote,
