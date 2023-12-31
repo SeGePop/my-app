@@ -65,8 +65,8 @@
   }
 
   .each-slide-effect > div {
-    height: 340px !important;
-    
+    height: 270px !important;
+    margin-top:50px;    
   }
   /* PROJECTS */
   .projects_content {
@@ -108,6 +108,10 @@
 @media only screen and (min-width: 768px) {
   section {
     font-size: 1.1em;
+  }
+  .each-slide-effect > div {
+    height: 400px !important;
+    margin-top:50px;    
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -281,7 +285,7 @@ a {
   align-items: center;
   justify-content: center;
   background-size: cover;
-  height: 520px;
+  height: 510px;
 }
 
 /* PROJECTS */
