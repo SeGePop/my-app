@@ -66,7 +66,7 @@ function Home() {
     <section class="home_content" id="home_content">
       <img loading="lazy" src={profile} alt="profile" class="circle" />
       <h1>User friendly, user first websites.</h1>
-      Hello! My name is <span>Pop Sergiu George</span>, and welcome to my
+      Hello! My name is <span>Sergiu George Pop</span>, and welcome to my
       website!
       <p>
         I am a web developer from Romania and currently living in Bihor county.
