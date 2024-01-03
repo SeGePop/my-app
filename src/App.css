@@ -93,10 +93,7 @@
   flex-direction: column-reverse;
   justify-content: space-between;
   }
-  /* CONTACT */
-  .contacts-container > h1 {
-    font-size: 0;
-  }
+ 
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -242,8 +239,9 @@ a {
   color: var(--text-color);
   text-decoration: none;
   background-color: var(--highlight);
-  width: 40%;
-  padding: 5px;
+  width: 30%;
+  padding-left: 10px;
+  padding-right:10px;
   margin-top: 50px;
   text-align: center;
   border-radius: 5px;
@@ -344,6 +342,41 @@ div.desc {
   font-size: 18px;
 }
 
+.left_column>ul{
+  list-style-type: none; /* Remove bullets */
+}
+
 i {
   color: var(--highlight);
+}
+
+/* LANGUAGE BUTTONS */
+
+.language_buttons {
+  background-color: var(--background);
+  float: right;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 17px;
+  align-items: center;
+  justify-content: center;
+  border: solid #047690;
+  border-radius: 25%;
+  background: none;
+  margin: 5px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+/* Change the color of links on hover */
+.language_buttons:hover {
+  background-color: var(--text-color);
+  color: var(--highlight);
+}
+
+/* Add a color to the active/current link */
+.language_buttons.active {
+  background-color: var(--highlight);
+  color: white;
 }

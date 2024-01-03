@@ -1,0 +1,34 @@
+{
+    "home":{
+        "h1":"User friendly, user first websites.",
+        "welcome1":"Hello! My name is ",
+        "name":"Sergiu George Pop",
+        "welcome2":" and welcome to my website!",
+        "p1": "I am a web developer from Romania and currently living in Bihor county. I enjoy building everything from small business sites to rich interactive web apps. If you are a business seeking a web presence or an employer you can get in touch with me in the Contact section or clicking on the button bellow.",
+        "p2": "After 10 years of working as a mechanical engineer, working in both 2D and 3D design, being delegated for months at a time abroad, and managing a 3 month long project coordinating up to 10 people, I have decided to shift my focus on what I've always been passionate about, telling computers what to do and how to think.",
+        "e-mail": "Click here to contact me directly via e-mail"
+    },
+    "navbar":{
+        "home": "HOME",
+        "credentials": "CREDENTIALS",
+        "projects": "PROJECTS",
+        "contact": "CONTACT"
+    },
+    "credentials":{
+        "top-skills":"Top Skills",
+        "certifications": "Certifications"
+    },
+    "projects":{
+        "clock":"Keep track of your time studying, and when to take a break.",
+        "calculator": "Working Calculator built from scratch using JavaScript",
+        "piano":"Keyboard and Mouse activated drum machine",
+        "quote":"A random quote generator"
+    },
+    "contact":{
+        "title":"Get in touch!",
+        "hiring":"Hiring? ",
+        "hiring_text": "Let's discuss your project requirements, goals, and timeline. I'm excited to collaborate and create something amazing together.",
+        "contracting": "Contracting? ",
+        "contracting_text": "Need a reliable developer for a specific task or ongoing support? Look no further—I'm here to assist."
+    }
+}

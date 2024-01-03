@@ -1,0 +1,34 @@
+{
+    "home":{
+        "h1":"Site-uri construite cu Utilizatorul ca element central!",
+        "welcome1":"Bună! Mă numesc ",
+        "name":"Sergiu George Pop",
+        "welcome2":" și bine ați venit pe site-ul meu personal!",
+        "p1": "Sunt un dezvolator web din Romania, locuind în prezent în județul Bihor. Îmi aduce plăcere proiectarea și dezvoltarea oricărui lucru, de la site-uri web pentru afaceri modeste până la aplicații web bogate în interactivitate.",
+        "p2": "După 10 ani ca inginer mecanic, lucrând atât în medii 2D cât și 3D, fiind delegat luni întregi în străinătate, și fiind Coordonator de Proiect pentru un contract ce a ținut 3 luni, coordonând până la 10 oameni odată, am decis să-mi schimb atenția către ce m-a pasionat dintotdeauna, anume să le spun calculatoarelor ce și cum să gândească.",
+        "e-mail": "Mă puteți contacta în mod direct prin e-mail dând click aici"
+    },
+    "navbar":{
+        "home": "ACASĂ",
+        "credentials": "ACREDITĂRI",
+        "projects": "PROIECTE",
+        "contact": "CONTACT"
+    },
+    "credentials":{
+        "top-skills":"Abilități",
+        "certifications": "Certificate"
+    },
+    "projects":{
+        "clock":"Țineți cont de timpul petrecut studiing, când să luați pauză, și pentru cât timp.",
+        "calculator": "O aplicație tip calculator, dezvoltată în întregime indepentent folosind JavaScript",
+        "piano":"Aparat de percuție, compatibil cu mouse ori tastatură.",
+        "quote":"Un simplu generator de citate."
+    },
+    "contact":{
+        "title":"Să intrăm în legătură!",
+        "hiring":"Angajați? ",
+        "hiring_text": "Vino să discutăm ce aveți nevoie pentru proiect, ce scop și cronologie v-ați propus. Sunt sigur că împreună putem crea ceva într-adevăr fantastic!",
+        "contracting": "Contractant? ",
+        "contracting_text": "Aveți nevoie de un dezvolator pentru o sarcină specifică, ori suport pe timp nedeterminat? Nu mai e nevoie să căutați - Vă stau la dispoziție!"
+    }
+}
