@@ -234,28 +234,25 @@ a {
 }
 
 .home_email {
-  display: flex;
-  justify-content: space-between;
+  float: right;
 }
 .home_email > a {
   color: var(--text-color);
   text-decoration: none;
   background-color: var(--highlight);
-  width: 30%;
+  width: 50%;
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 50px;
   text-align: center;
   border-radius: 5px;
+  float: right;
 }
 .home_email > a > strong {
   color: var(--text-color);
   display: inline-block;
   transform: translateX(30%);
   transition: 0.5s;
-}
-.home_email:hover > a > strong {
-  transform: translateX(70%);
 }
 
 /* CREDENTIALS */
