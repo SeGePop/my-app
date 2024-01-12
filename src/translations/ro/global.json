@@ -4,9 +4,9 @@
         "welcome1":"Bună! Mă numesc ",
         "name":"Sergiu George Pop",
         "welcome2":" și bine ați venit pe site-ul meu personal!",
-        "p1": "Sunt un dezvolator web din Romania, locuind în prezent în județul Bihor. Îmi aduce plăcere proiectarea și dezvoltarea oricărui lucru, de la site-uri web pentru afaceri modeste până la aplicații web bogate în interactivitate.",
-        "p2": "După 10 ani ca inginer mecanic, lucrând atât în medii 2D cât și 3D, fiind delegat luni întregi în străinătate, și fiind Coordonator de Proiect pentru un contract ce a ținut 3 luni, coordonând până la 10 oameni odată, am decis să-mi schimb atenția către ce m-a pasionat dintotdeauna, anume să le spun calculatoarelor ce și cum să gândească.",
-        "e-mail": "Mă puteți contacta în mod direct prin e-mail dând click aici"
+        "p1": "Sunt un dezvoltator web cu sediul în județul Bihor, România. Pasiunea mea constă în construirea de orice, de la site-uri de afaceri mici la aplicații web interactive bogate. Dacă sunteți o companie care caută o prezență pe web sau un angajator nu ezitați să mă contactați fie prin secțiunea Contact sau dând clic pe butonul de mai jos.",
+        "p2": "Înainte de cariera mea în dezvoltarea web, am petrecut 10 ani lucrând ca inginer mecanic. În acest timp, am câștigat o vastă experiență atât în ​​design 2D, cât și în 3D, am fost delegat luni de zile în străinătate și am gestionat un proiect de 3 luni coordonând până la 10 persoane. Cu toate acestea, întotdeauna am fost pasionat de programare și dezvoltare de software, ceea ce m-a determinat să urmez o carieră în dezvoltarea web.",
+        "e-mail": "Click aici pentru a mă contacta direct prin poștă electronică    "
     },
     "navbar":{
         "home": "ACASĂ",
@@ -26,9 +26,9 @@
     },
     "contact":{
         "title":"Să intrăm în legătură!",
-        "hiring":"Angajați? ",
-        "hiring_text": "Vino să discutăm ce aveți nevoie pentru proiect, ce scop și cronologie v-ați propus. Sunt sigur că împreună putem crea ceva într-adevăr fantastic!",
+        "hiring":"Angajator? ",
+        "hiring_text": "Veniți să discutăm ce aveți nevoie pentru proiect, ce scop și cronologie v-ați propus. Sunt sigur că împreună putem crea ceva într-adevăr fantastic!",
         "contracting": "Contractant? ",
-        "contracting_text": "Aveți nevoie de un dezvolator pentru o sarcină specifică, ori suport pe timp nedeterminat? Nu mai e nevoie să căutați - Vă stau la dispoziție!"
+        "contracting_text": "Aveți nevoie de un dezvolator pentru o sarcină specifică, ori suport pe timp nedeterminat? Nu mai e nevoie să căutați - vă stau la dispoziție!"
     }
 }
