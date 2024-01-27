@@ -2,14 +2,14 @@ import { SocialIcon } from "react-social-icons";
 import { useTranslation } from "react-i18next";
 
 export default function Contact() {
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
   return (
-    <section class="contact_content" id="contact_content">
-      <div class="contact_info">
-        <div class="contacts-container">
+    <section className="contact_content" id="contact_content">
+      <div className="contact_info">
+        <div className="contacts-container">
           <h1>{t("contact.title")}</h1>
-          <div class="columns">
-            <div class="left_column">
+          <div className="columns">
+            <div className="left_column">
               <ul>
                 <li>
                   <i>{t("contact.hiring")}</i>{t("contact.hiring_text")}</li>
@@ -18,19 +18,19 @@ export default function Contact() {
                   <i>{t("contact.contracting")}</i>{t("contact.contracting_text")}</li>
               </ul>
 
-              <div class="contacts-element"></div>
+              <div className="contacts-element"></div>
               <div>
-                <span class="contacts-item">E: </span>
+                <span className="contacts-item">E: </span>
                 <a
                   href="mailto:sergiugeorgepop@gmail.com"
-                  class="contacts-email"
+                  className="contacts-email"
                 >
                   sergiugeorgepop@gmail.com
                 </a>
               </div>
             </div>
           </div>
-          <div class="social_buttons">
+          <div className="social_buttons">
             <div></div>
             <SocialIcon
               style={{ height: 80, width: 80 }}
@@ -58,7 +58,7 @@ export default function Contact() {
             />
             <div></div>
           </div>
-          <div class="right_column"></div>
+          <div className="right_column"></div>
         </div>
       </div>
     </section>

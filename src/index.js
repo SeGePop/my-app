@@ -7,6 +7,7 @@ import ClockApp from "./components/25-5-Clock-main/src/App";
 import { DrumMachine_App } from "./components/DrumMachine-main/src/DrumMachine_App";
 import { JSCalculator_App } from "./components/JSCalculator-main/src/JSCalculator_App";
 import RandomQuoteGenerator from "./components/RandomQuoteGenerator-main/src/RandomQuoteGenerator_App";
+import TO_DO_APP from "./components/To-Do-App/src/TO_DO_APP";
 import reportWebVitals from "./reportWebVitals";
 import global_en from "./translations/en/global.json";
 import global_ro from "./translations/ro/global.json";
@@ -36,6 +37,7 @@ root.render(
         <Route path="/drum" element={<DrumMachine_App />} />
         <Route path="/calculator" element={<JSCalculator_App />} />
         <Route path="/randomquotes" element={<RandomQuoteGenerator />} />
+        <Route path="/to_do_list" element={<TO_DO_APP />} />
       </Routes>
     </BrowserRouter>
   </I18nextProvider>

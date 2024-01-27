@@ -31,7 +31,7 @@ export default function Navbar() {
   };
 
   return (
-    <div class="topbar">
+    <div className="topbar">
       <div className="topnav">
         <a
           href="#home_content"
@@ -66,7 +66,7 @@ export default function Navbar() {
       <button className="language_buttons" onClick={handleClick}>
       {language === "en" ? "EN" : "RO"}
     </button>
-        <img loading="lazy" src={logo} alt="Segepop" class="logo" />
+        <img loading="lazy" src={logo} alt="Segepop" className="logo" />
       </div>
     </div>
   );

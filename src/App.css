@@ -1,16 +1,11 @@
 :root {
   --highlight: #047690;
+  --highlight2: #00dee6;
   --body_background: rgb(20, 20, 20);
   --background: #333;
   --text-color: white;
 }
 
-/* WARNING */
-.warning {
-  color: red;
-  text-align: center;
-  vertical-align: middle;
-}
 
 /* PAGE FORMATTING */
 
@@ -78,7 +73,7 @@
   }
   div.gallery {
     width: 40vw !important;
-    height: 260px !important;
+    height: 29vh !important;
     flex-direction: row !important;
     justify-content: space-between;
   }
@@ -90,12 +85,18 @@
   }
 
   .desc {
-    margin-left: -50% !important;
+    margin-left: -90% !important;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
       1px 1px 0 #000;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
+  }
+
+  div.gallery img {
+    width: 40vw !important;
+    height: 20vh !important;
+    object-fit: cover;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -287,7 +288,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
 }
 .projects_content > h1 {
   font-size: 0;
@@ -310,14 +311,111 @@ div.gallery:hover {
 }
 
 div.gallery img {
-  width: 20vw;
-  height: 200px;
+  width: 16vw;
+  height: 20vh;
   object-fit: cover;
 }
 
 div.desc {
   padding: 15px;
   text-align: center;
+}
+
+/* TO DO APP */
+.TO_DO_APP{
+  background: var(--background);
+  width:100%;
+  max-width:540px;
+  margin: auto;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+
+.TO_DO_APP h2{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.TO_DO_APP h2 img{
+  width: 30px;
+  margin-left: 10px;
+}
+
+.TO_DO_APP .row{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #3b3b3b;
+  border-radius: 5px;
+  padding-left: 20px;
+  margin-bottom:25px;
+}
+
+.TO_DO_APP input{
+ flex: 1;
+ border: none;
+ outline: none;
+ background:transparent;
+ padding:10px;
+ color:var(--text-color);
+}
+
+.TO_DO_APP button{
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius:5px;
+  background-color: var(--highlight);
+  color: var(--text-color)
+}
+
+.TO_DO_APP ul li{
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.TO_DO_APP ul li::before{
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  background-image: url(./components/To-Do-App/src/images/uncheck.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+.TO_DO_APP ul li.checked{
+  text-decoration: line-through;
+}
+.TO_DO_APP ul li.checked::before{
+  background-image: url(./components/To-Do-App/src/images/check.png);
+}
+
+.TO_DO_APP ul li span{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  line-height:40px;
+  text-align: center;
+  border-radius: 25%;
+}
+
+
+.TO_DO_APP ul li span:hover{
+   background: var(--highlight);
 }
 /* CONTACT */
 .contact_content {

@@ -22,7 +22,8 @@
         "clock":"Țineți cont de timpul petrecut studiing, când să luați pauză, și pentru cât timp.",
         "calculator": "O aplicație tip calculator, dezvoltată în întregime indepentent folosind JavaScript",
         "piano":"Aparat de percuție, compatibil cu mouse ori tastatură.",
-        "quote":"Un simplu generator de citate."
+        "quote":"Un simplu generator de citate.",
+        "to_do_list":"O aplicație To-Do List care vă ajută să vă gestionați sarcinile eficient, cu stocare locală ce garantează confidențialitatea."
     },
     "contact":{
         "title":"Să intrăm în legătură!",
