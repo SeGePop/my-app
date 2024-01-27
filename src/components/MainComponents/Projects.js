@@ -27,7 +27,7 @@ export default function Projects() {
             bgColor="#047690"
             fgColor="white"
             network="github"
-            href="https://github.com/SeGePop/25-5-Clock"
+            href="https://github.com/SeGePop/my-app/tree/master/src/components/25-5-Clock-main"
             target="_blank"
           />
         </div>
@@ -47,7 +47,7 @@ export default function Projects() {
             bgColor="#047690"
             fgColor="white"
             network="github"
-            href="https://github.com/SeGePop/25-5-Clock"
+            href="https://github.com/SeGePop/my-app/tree/master/src/components/To-Do-App/src"
             target="_blank"
           />
         </div>
@@ -67,7 +67,7 @@ export default function Projects() {
             bgColor="#047690"
             fgColor="white"
             network="github"
-            href="https://github.com/SeGePop/JSCalculator"
+            href="https://github.com/SeGePop/my-app/tree/master/src/components/JSCalculator-main"
             target="_blank"
           />
         </div>
@@ -92,7 +92,7 @@ export default function Projects() {
             bgColor="#047690"
             fgColor="white"
             network="github"
-            href="https://github.com/SeGePop/DrumMachine"
+            href="https://github.com/SeGePop/my-app/tree/master/src/components/DrumMachine-main"
             target="_blank"
           />
         </div>
@@ -112,7 +112,7 @@ export default function Projects() {
             bgColor="#047690"
             fgColor="white"
             network="github"
-            href="https://github.com/SeGePop/RandomQuoteGenerator"
+            href="https://github.com/SeGePop/my-app/tree/master/src/components/RandomQuoteGenerator-main"
             target="_blank"
           />
         </div>
