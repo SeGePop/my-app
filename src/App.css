@@ -52,11 +52,12 @@
     flex-wrap: wrap;
     height: auto !important;
     width: 70vw !important;
-    font-size: 18px;
+    font-size: 14px;
   }
   .diplomas {
     width: 100% !important;
     height: auto !important;
+    margin-top: 10px;
   }
 
   .credentials_content {
@@ -64,7 +65,7 @@
   }
 
   .each-slide-effect > div {
-    height: 270px !important;
+    height: 230px !important;
     margin-top: 0px;
   }
   /* PROJECTS */

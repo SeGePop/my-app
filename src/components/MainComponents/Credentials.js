@@ -2,10 +2,11 @@ import { Slide } from "react-slideshow-image";
 import image1 from "../../images/certificates/front-end-development-libraries.jpeg";
 import image2 from "../../images/certificates/javascript-algorithms-and-data-structures.jpeg";
 import image3 from "../../images/certificates/responsive-web-design.jpeg";
+import image4 from "../../images/certificates/relational-database.jpeg"
 import { useTranslation } from "react-i18next";
 
 export default function Credentials() {
-  const images = [image1, image2, image3];
+  const images = [image1, image2, image3, image4];
   const [t, i18n] = useTranslation("global");
 
   return (
@@ -13,11 +14,14 @@ export default function Credentials() {
       <div className="experience">
         <h1>{t("credentials.top-skills")}</h1>
         <ul>
+          <li>Fullstack Developer</li>
           <li>React.js</li>
           <li>JavaScript</li>
-          <li>Front-End Development</li>
           <li>HTML</li>
           <li>CSS</li>
+          <li>PostgreSQL</li>
+          <li>Bash</li>
+          <li>Git</li>
         </ul>
 
         <h2>{t("credentials.certifications")}</h2>
@@ -46,6 +50,14 @@ export default function Credentials() {
               Front End Development Libraries
             </a>
           </li>
+          <li>
+            <a
+              href="https://www.freecodecamp.org/certification/Segepop/relational-database-v8"
+              target="_blank"
+            >
+              Relational Databases
+            </a>
+          </li>
         </ul>
       </div>
       <div className="diplomas">
@@ -58,6 +70,9 @@ export default function Credentials() {
           </div>
           <div className="each-slide-effect">
             <div style={{ backgroundImage: `url(${images[2]})` }}></div>
+          </div>
+          <div className="each-slide-effect">
+            <div style={{ backgroundImage: `url(${images[3]})` }}></div>
           </div>
         </Slide>
       </div>

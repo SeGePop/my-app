@@ -55,10 +55,15 @@ export default function Projects() {
 
       <div className="gallery">
         <a target="_blank" href="/calculator">
-          <img loading="lazy" className="image" src={calculator} alt="Calculator" />
+          <img
+            loading="lazy"
+            className="image"
+            src={calculator}
+            alt="Calculator"
+          />
         </a>
         <div className="desc">
-        {t("projects.calculator")}
+          {t("projects.calculator")}
           <br></br>
           <br></br>
           <SocialIcon
