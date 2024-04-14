@@ -7,7 +7,7 @@ import App from "./App";
 // import secondary components
 import ClockApp from "./components/SecondaryComponents/FrontEnd/25-5-Clock-main/src/App";
 import { JSCALC } from "./components/SecondaryComponents/FrontEnd/JSCalculator-main/src/JSCALC";
-import { DrumMachine } from "./components/SecondaryComponents/FrontEnd/DrumMachine-main/src/DrumMachine";
+import { DrumMachine } from "./components/SecondaryComponents/FrontEnd/DrumMachine-main/src/drumMachine";
 import RandomQuoteGenerator from "./components/SecondaryComponents/FrontEnd/RandomQuoteGenerator-main/src/RandomQuoteGenerator_App";
 import TO_DO_APP from "./components/SecondaryComponents/FrontEnd/To-Do-App/src/TO_DO_APP";
 
