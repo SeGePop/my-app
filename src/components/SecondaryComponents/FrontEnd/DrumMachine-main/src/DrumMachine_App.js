@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 
-export class DrumMachine_App extends React.Component {
+export class DRUMMACHINE_APP extends React.Component {
   constructor(props) {
     super(props);
     this.state = {

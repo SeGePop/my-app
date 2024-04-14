@@ -365,6 +365,8 @@ div.desc {
   text-align: center;
 }
 
+/* FRONTEND PROJECTS */
+
 .frontend_projects_content {
   width: 98vw;
   display: flex;
@@ -400,6 +402,40 @@ div.frontend_gallery img {
 div.frontend_desc {
   padding: 15px;
   text-align: center;
+}
+
+/* BACKEND PROJECTS */
+
+.bash {
+  background-color: black;
+  color: green !important;
+  font-size: medium;
+  font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  width: 100%;
+  display: inline-block;
+  font-size: large;
+}
+
+.bash > h1 {
+  margin-left: 50px;
+}
+
+.bash > ul > li > a{
+  color: green !important;
+}
+
+.bash > ul > li {
+  margin-top: 10px;
+  margin-bottom: 20px !important;
+}
+
+.bash > ul {
+  list-style-type: none; /* Remove default bullets */
+}
+
+.bash > ul li::before {
+  content: '>'; /* Unicode checkmark symbol */
+  margin-right: 0.5em;
 }
 
 /* TO DO APP */

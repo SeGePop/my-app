@@ -6,8 +6,8 @@ import App from "./App";
 
 // import secondary components
 import ClockApp from "./components/SecondaryComponents/FrontEnd/25-5-Clock-main/src/App";
-import { DrumMachine_App } from "./components/SecondaryComponents/FrontEnd/DrumMachine-main/src/DrumMachine_App";
-import { JSCalculator_App } from "./components/SecondaryComponents/FrontEnd/JSCalculator-main/src/JSCalculator_App";
+import { DRUMMACHINE_APP } from "./components/SecondaryComponents/FrontEnd/DrumMachine-main/src/DRUMMACHINE_APP";
+import { JSCALCULATOR_APP } from "./components/SecondaryComponents/FrontEnd/JSCalculator-main/src/JSCALCULATOR_APP";
 import RandomQuoteGenerator from "./components/SecondaryComponents/FrontEnd/RandomQuoteGenerator-main/src/RandomQuoteGenerator_App";
 import TO_DO_APP from "./components/SecondaryComponents/FrontEnd/To-Do-App/src/TO_DO_APP";
 
@@ -48,8 +48,8 @@ root.render(
         {/* FrontEnd routes */}
         <Route path="/frontend/to_do_list" element={<TO_DO_APP />} />
         <Route path="/frontend/clock" element={<ClockApp />} />
-        <Route path="/frontend/drum" element={<DrumMachine_App />} />
-        <Route path="/frontend/calculator" element={<JSCalculator_App />} />
+        <Route path="/frontend/drum" element={<DRUMMACHINE_APP />} />
+        <Route path="/frontend/calculator" element={<JSCALCULATOR_APP />} />
         <Route path="/frontend/randomquotes" element={<RandomQuoteGenerator />} />
       </Routes>
     </BrowserRouter>
