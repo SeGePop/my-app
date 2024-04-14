@@ -19,8 +19,7 @@ export default function Contact() {
               </ul>
 
               <div className="contacts-element"></div>
-              <div>
-                <span className="contacts-item">E: </span>
+              <div className="email-element">
                 <a
                   href="mailto:sergiugeorgepop@gmail.com"
                   className="contacts-email"

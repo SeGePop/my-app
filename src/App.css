@@ -10,6 +10,11 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .website {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+
   .logo {
     max-width: 50px;
     height: auto;
@@ -26,9 +31,10 @@
   }
 
   section {
-    font-size: 0.8em;
+    font-size: 1em;
     width: 80vw !important;
-    margin-top: 60px;
+    height: auto !important;
+    padding: 30px;
   }
   /* PROFILE PICTURE */
   .circle {
@@ -78,8 +84,6 @@
     font-size: 18px !important;
     text-decoration: underline;
   }
-
- 
 
   div.gallery {
     width: 70vw !important;
@@ -137,6 +141,23 @@
     height: 19vh !important;
     object-fit: cover;
   }
+
+  /* CONTACT */
+.contact_content {
+  margin-left: -30px;
+  text-align: left !important;
+  justify-content: center !important;
+}
+
+.contacts-container > h1{
+  text-align: center;
+}
+
+.email-element > a{
+  color: var(--highlight2);
+  margin-left:10vw;
+}
+
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
