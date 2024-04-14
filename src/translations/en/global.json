@@ -23,7 +23,8 @@
         "calculator": "Working Calculator built from scratch using JavaScript",
         "piano":"Keyboard and Mouse activated drum machine",
         "quote":"A random quote generator",
-        "to_do_list":"A To-Do List app which helps you manage your tasks efficiently, with local storage, and privacy."
+        "to_do_list":"A To-Do List app with local storage for privacy.",
+        "exercise": "Track your exercises. Create a new account, or connect to an existing one."
     },
     "contact":{
         "title":"Get in touch!",

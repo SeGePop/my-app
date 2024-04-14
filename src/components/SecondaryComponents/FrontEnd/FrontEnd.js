@@ -10,14 +10,14 @@ import { useTranslation } from "react-i18next";
 export default function FrontEnd() {
   const [t] = useTranslation("global");
   return (
-    <section className="projects_content" id="projects_content">
-      <h1>Projects</h1>
-
-      <div className="gallery">
+    <section className="frontend_projects_content" id="frontend_projects_content">
+      {/* spacing fix -> emtpy div */}
+      <div></div>
+      <div className="frontend_gallery">
         <a target="_blank" href="/frontend/clock">
           <img loading="lazy" src={clock} alt="25+5 Clock" />
         </a>
-        <div className="desc">
+        <div className="frontend_desc">
           {t("projects.clock")}
           <br></br>
           <br></br>
@@ -33,11 +33,11 @@ export default function FrontEnd() {
         </div>
       </div>
 
-      <div className="gallery">
+      <div className="frontend_gallery">
         <a target="_blank" href="/frontend/to_do_list">
           <img loading="lazy" src={to_do_list} alt="To-Do List" />
         </a>
-        <div className="desc">
+        <div className="frontend_desc">
           {t("projects.to_do_list")}
           <br></br>
           <br></br>
@@ -53,7 +53,7 @@ export default function FrontEnd() {
         </div>
       </div>
 
-      <div className="gallery">
+      <div className="frontend_gallery">
         <a target="_blank" href="/frontend/calculator">
           <img
             loading="lazy"
@@ -62,7 +62,7 @@ export default function FrontEnd() {
             alt="Calculator"
           />
         </a>
-        <div className="desc">
+        <div className="frontend_desc">
           {t("projects.calculator")}
           <br></br>
           <br></br>
@@ -78,7 +78,7 @@ export default function FrontEnd() {
         </div>
       </div>
 
-      <div className="gallery">
+      <div className="frontend_gallery">
         <a target="_blank" href="/frontend/drum">
           <img
             loading="lazy"
@@ -87,7 +87,7 @@ export default function FrontEnd() {
             alt="Drum Machine"
           />
         </a>
-        <div className="desc">
+        <div className="frontend_desc">
           {t("projects.piano")}
           <br></br>
           <br></br>
@@ -103,11 +103,11 @@ export default function FrontEnd() {
         </div>
       </div>
 
-      <div className="gallery">
+      <div className="frontend_gallery">
         <a target="_blank" href="/frontend/randomquotes">
           <img loading="lazy" src={random_quote} alt="Random Quote Generator" />
         </a>
-        <div className="desc">
+        <div className="frontend_desc">
           {t("projects.quote")}
           <br></br>
           <br></br>
@@ -122,6 +122,8 @@ export default function FrontEnd() {
           />
         </div>
       </div>
+      {/* spacing fix */}
+      <div></div>
     </section>
   );
 }

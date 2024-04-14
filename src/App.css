@@ -6,7 +6,6 @@
   --text-color: white;
 }
 
-
 /* PAGE FORMATTING */
 
 /* Extra small devices (phones, 600px and down) */
@@ -28,7 +27,7 @@
 
   section {
     font-size: 0.8em;
-    width: 90vw !important;
+    width: 80vw !important;
     margin-top: 60px;
   }
   /* PROFILE PICTURE */
@@ -52,7 +51,7 @@
     flex-wrap: wrap;
     height: auto !important;
     width: 70vw !important;
-    font-size: 14px;
+    font-size: 15px;
   }
   .diplomas {
     width: 100% !important;
@@ -70,14 +69,26 @@
   }
   /* PROJECTS */
   .projects_content {
-    display: block !important;
+    margin-top: -50px;
+    display: flex !important;
+    flex-direction: column !important;
   }
+
+  .projects_content > h1 {
+    font-size: 18px !important;
+    text-decoration: underline;
+  }
+
+ 
+
   div.gallery {
     width: 70vw !important;
     height: 21vh !important;
     flex-direction: row !important;
     justify-content: space-between;
   }
+
+
   .project_button {
     position: relative !important;
     bottom: 0px;
@@ -97,6 +108,33 @@
   div.gallery img {
     width: 50vw !important;
     height: 20vh !important;
+    object-fit: cover;
+  }
+
+/* PROJECTS FRONTEND */
+
+  .frontend_projects_content {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-top: 0;
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
+
+  div.frontend_gallery {
+    width: 70vw !important;
+    height: 21vh !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+  }
+
+  .frontend_desc {
+    margin-left: 10px;
+  }
+
+  div.frontend_gallery img {
+    width: 20vw !important;
+    height: 19vh !important;
     object-fit: cover;
   }
 }
@@ -134,7 +172,8 @@ html {
 }
 body {
   height: 100%;
-  overflow-y: hidden;
+  /* hide scrollbar */
+  /* overflow-y: hidden; */
 }
 
 .logo {
@@ -204,7 +243,7 @@ section {
   height: 100vh;
   height: 100vh;
   top: 0;
-  width: 90vw;
+  width: 100vw;
 }
 /* all links must remain white */
 a {
@@ -213,7 +252,6 @@ a {
 
 /* HOME CONTENT */
 .home_content {
-  margin-top: 20vh;
   text-shadow: 0px 1px 0 var(--highlight);
   width: 70vw;
 }
@@ -262,7 +300,7 @@ a {
   display: flex;
   justify-content: center;
   width: 95vw;
-  margin-top: 50px;
+  margin-top: -50px;
 }
 
 .experience {
@@ -286,11 +324,16 @@ a {
 /* PROJECTS */
 
 .projects_content {
+  width: 90vw;
+  margin-top: -50px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
 }
+
+
+
 .projects_content > h1 {
   font-size: 0;
 }
@@ -322,59 +365,95 @@ div.desc {
   text-align: center;
 }
 
+.frontend_projects_content {
+  width: 98vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.frontend_projects_content > h1 {
+  font-size: 0;
+}
+
+div.frontend_gallery {
+  background-image: linear-gradient(var(--body_background), var(--background));
+  border: #047690 solid;
+  margin: 5px;
+  float: left;
+  width: 15vw;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.frontend_gallery:hover {
+  border: solid white;
+}
+
+div.frontend_gallery img {
+  width: 15vw;
+  height: 40vh;
+  object-fit: cover;
+}
+
+div.frontend_desc {
+  padding: 15px;
+  text-align: center;
+}
+
 /* TO DO APP */
-.TO_DO_APP{
+.TO_DO_APP {
   background: var(--background);
-  width:100%;
-  max-width:540px;
+  width: 100%;
+  max-width: 540px;
   margin: auto;
   padding: 40px 30px 70px;
   border-radius: 10px;
 }
 
-.TO_DO_APP h2{
+.TO_DO_APP h2 {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-
-.TO_DO_APP h2 img{
+.TO_DO_APP h2 img {
   width: 30px;
   margin-left: 10px;
 }
 
-.TO_DO_APP .row{
-  display:flex;
+.TO_DO_APP .row {
+  display: flex;
   align-items: center;
   justify-content: space-between;
   background: #3b3b3b;
   border-radius: 5px;
   padding-left: 20px;
-  margin-bottom:25px;
+  margin-bottom: 25px;
 }
 
-.TO_DO_APP input{
- flex: 1;
- border: none;
- outline: none;
- background:transparent;
- padding:10px;
- color:var(--text-color);
+.TO_DO_APP input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  color: var(--text-color);
 }
 
-.TO_DO_APP button{
+.TO_DO_APP button {
   border: none;
   outline: none;
   padding: 16px 50px;
   font-size: 16px;
   cursor: pointer;
-  border-radius:5px;
+  border-radius: 5px;
   background-color: var(--highlight);
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
-.TO_DO_APP ul li{
+.TO_DO_APP ul li {
   list-style: none;
   font-size: 17px;
   padding: 12px 8px 12px 50px;
@@ -383,8 +462,8 @@ div.desc {
   position: relative;
 }
 
-.TO_DO_APP ul li::before{
-  content: '';
+.TO_DO_APP ul li::before {
+  content: "";
   position: absolute;
   height: 28px;
   width: 28px;
@@ -395,34 +474,34 @@ div.desc {
   left: 8px;
 }
 
-.TO_DO_APP ul li.checked{
+.TO_DO_APP ul li.checked {
   text-decoration: line-through;
 }
-.TO_DO_APP ul li.checked::before{
+.TO_DO_APP ul li.checked::before {
   background-image: url(./components/SecondaryComponents/FrontEnd/To-Do-App/src/images/check.png);
 }
 
-.TO_DO_APP ul li span{
+.TO_DO_APP ul li span {
   position: absolute;
   right: 0;
   top: 5px;
   width: 40px;
   height: 40px;
   font-size: 22px;
-  line-height:40px;
+  line-height: 40px;
   text-align: center;
   border-radius: 25%;
 }
 
-
-.TO_DO_APP ul li span:hover{
-   background: var(--highlight);
+.TO_DO_APP ul li span:hover {
+  background: var(--highlight);
 }
 /* CONTACT */
 .contact_content {
   text-align: center;
   vertical-align: middle;
   width: 70vw;
+  margin-bottom: 0px;
 }
 
 .social_buttons {

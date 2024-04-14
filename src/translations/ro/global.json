@@ -23,7 +23,8 @@
         "calculator": "O aplicație tip calculator, dezvoltată în întregime indepentent folosind JavaScript",
         "piano":"Aparat de percuție, compatibil cu mouse ori tastatură.",
         "quote":"Un simplu generator de citate.",
-        "to_do_list":"O aplicație To-Do List care vă ajută să vă gestionați sarcinile eficient, cu stocare locală ce garantează confidențialitatea."
+        "to_do_list":"O aplicație de gestionare a sarcinilor.",
+        "exercise": "Urmăriți-vă exercițiile, fie creând un cont nou sau conectându-vă la unul existent."
     },
     "contact":{
         "title":"Să intrăm în legătură!",
