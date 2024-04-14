@@ -142,6 +142,43 @@
     object-fit: cover;
   }
 
+  /* BACKEND PROJECTS */
+  .bash {
+    background-color: black;
+    color: green !important;
+    font-size: 16px !important;
+    font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+    width: 100vw !important;
+    height: 100vh !important;
+    display: inline-block;
+    font-size: small;
+  }
+  .bash > h1 {
+    margin-left: 0px !important;
+    width: 60vw;
+  }
+  
+  .bash > ul > li > a{
+    color: green !important;
+  }
+  
+  .bash > ul > li {
+    margin-top: 10px;
+    margin-bottom: 20px !important;
+  }
+  
+  .bash > ul {
+    list-style-type: none; /* Remove default bullets */
+    width: 50vw;
+  }
+  
+  .bash > ul li::before {
+    content: '>';
+    margin-right: 0.1em !important;
+    margin-left: -10px;
+  }
+  
+
   /* CONTACT */
 .contact_content {
   margin-left: -30px;
