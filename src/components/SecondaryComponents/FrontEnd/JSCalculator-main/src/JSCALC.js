@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
 
-export function JSCALCULATOR_APP() {
+export function JSCALC() {
   const [formula, setFormula] = useState("0");
   const [result, setResult] = useState("0");
   const [decimal, setDecimal] = useState("0");
