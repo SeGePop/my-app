@@ -14,7 +14,7 @@ export default function FrontEnd() {
       {/* spacing fix -> emtpy div */}
       <div></div>
       <div className="frontend_gallery">
-        <a target="_blank" href="/frontend/clock">
+        <a href="/frontend/clock">
           <img loading="lazy" src={clock} alt="25+5 Clock" />
         </a>
         <div className="frontend_desc">
@@ -34,7 +34,7 @@ export default function FrontEnd() {
       </div>
 
       <div className="frontend_gallery">
-        <a target="_blank" href="/frontend/to_do_list">
+        <a href="/frontend/to_do_list">
           <img loading="lazy" src={to_do_list} alt="To-Do List" />
         </a>
         <div className="frontend_desc">
@@ -54,7 +54,7 @@ export default function FrontEnd() {
       </div>
 
       <div className="frontend_gallery">
-        <a target="_blank" href="/frontend/calculator">
+        <a href="/frontend/calculator">
           <img
             loading="lazy"
             className="image"
@@ -79,7 +79,7 @@ export default function FrontEnd() {
       </div>
 
       <div className="frontend_gallery">
-        <a target="_blank" href="/frontend/drum">
+        <a href="/frontend/drum">
           <img
             loading="lazy"
             className="image"
@@ -104,7 +104,7 @@ export default function FrontEnd() {
       </div>
 
       <div className="frontend_gallery">
-        <a target="_blank" href="/frontend/randomquotes">
+        <a href="/frontend/randomquotes">
           <img loading="lazy" src={random_quote} alt="Random Quote Generator" />
         </a>
         <div className="frontend_desc">
