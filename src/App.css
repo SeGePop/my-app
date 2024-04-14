@@ -73,8 +73,8 @@
     display: block !important;
   }
   div.gallery {
-    width: 40vw !important;
-    height: 29vh !important;
+    width: 70vw !important;
+    height: 21vh !important;
     flex-direction: row !important;
     justify-content: space-between;
   }
@@ -95,7 +95,7 @@
   }
 
   div.gallery img {
-    width: 40vw !important;
+    width: 50vw !important;
     height: 20vh !important;
     object-fit: cover;
   }
@@ -300,7 +300,7 @@ div.gallery {
   border: #047690 solid;
   margin: 5px;
   float: left;
-  width: 20vw;
+  width: 30vw;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -312,8 +312,8 @@ div.gallery:hover {
 }
 
 div.gallery img {
-  width: 16vw;
-  height: 20vh;
+  width: 30vw;
+  height: 50vh;
   object-fit: cover;
 }
 
@@ -388,7 +388,7 @@ div.desc {
   position: absolute;
   height: 28px;
   width: 28px;
-  background-image: url(./components/To-Do-App/src/images/uncheck.png);
+  background-image: url(./components/SecondaryComponents/FrontEnd/To-Do-App/src/images/uncheck.png);
   background-size: cover;
   background-position: center;
   top: 12px;
@@ -399,7 +399,7 @@ div.desc {
   text-decoration: line-through;
 }
 .TO_DO_APP ul li.checked::before{
-  background-image: url(./components/To-Do-App/src/images/check.png);
+  background-image: url(./components/SecondaryComponents/FrontEnd/To-Do-App/src/images/check.png);
 }
 
 .TO_DO_APP ul li span{

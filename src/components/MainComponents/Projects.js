@@ -1,11 +1,8 @@
-import to_do_list from "../../images/to_do_list.jpg"
-import clock from "../../images/25+5_clock.jpg";
-import calculator from "../../images/calculator.jpeg";
-import drum_machine from "../../images/drum_machine.jpeg";
-import random_quote from "../../images/random_quote.jpeg";
-import { SocialIcon } from "react-social-icons";
 import "react-slideshow-image/dist/styles.css";
 import { useTranslation } from "react-i18next";
+import frontend from "../../images/frontend.jpeg";
+import backend from "../../images/backend.jpeg";
+import fullstack from "../../images/fullstack.jpeg"
 
 export default function Projects() {
   const [t] = useTranslation("global");
@@ -14,112 +11,40 @@ export default function Projects() {
       <h1>Projects</h1>
 
       <div className="gallery">
-        <a target="_blank" href="/clock">
-          <img loading="lazy" src={clock} alt="25+5 Clock" />
+        <a target="_blank" href="/frontend">
+          <img loading="lazy" src={frontend} alt="FrontEnd" />
         </a>
         <div className="desc">
-          {t("projects.clock")}
+          FrontEnd
           <br></br>
           <br></br>
-          <SocialIcon
-            className="project_button"
-            style={{ height: 80, width: 80 }}
-            bgColor="#047690"
-            fgColor="white"
-            network="github"
-            href="https://github.com/SeGePop/my-app/tree/master/src/components/25-5-Clock-main"
-            target="_blank"
-          />
         </div>
       </div>
 
       <div className="gallery">
-        <a target="_blank" href="/to_do_list">
-          <img loading="lazy" src={to_do_list} alt="To-Do List" />
+        <a target="_blank" href="/backend">
+          <img loading="lazy" src={backend} alt="BackEnd" />
         </a>
         <div className="desc">
-          {t("projects.to_do_list")}
+          BackEnd
           <br></br>
           <br></br>
-          <SocialIcon
-            className="project_button"
-            style={{ height: 80, width: 80 }}
-            bgColor="#047690"
-            fgColor="white"
-            network="github"
-            href="https://github.com/SeGePop/my-app/tree/master/src/components/To-Do-App/src"
-            target="_blank"
-          />
         </div>
       </div>
 
       <div className="gallery">
-        <a target="_blank" href="/calculator">
+        <a target="_blank" href="/fullstack">
           <img
             loading="lazy"
             className="image"
-            src={calculator}
-            alt="Calculator"
+            src={fullstack}
+            alt="Fullstack"
           />
         </a>
         <div className="desc">
-          {t("projects.calculator")}
+          Fullstack
           <br></br>
           <br></br>
-          <SocialIcon
-            className="project_button"
-            style={{ height: 80, width: 80 }}
-            bgColor="#047690"
-            fgColor="white"
-            network="github"
-            href="https://github.com/SeGePop/my-app/tree/master/src/components/JSCalculator-main"
-            target="_blank"
-          />
-        </div>
-      </div>
-
-      <div className="gallery">
-        <a target="_blank" href="/drum">
-          <img
-            loading="lazy"
-            className="image"
-            src={drum_machine}
-            alt="Drum Machine"
-          />
-        </a>
-        <div className="desc">
-          {t("projects.piano")}
-          <br></br>
-          <br></br>
-          <SocialIcon
-            className="project_button"
-            style={{ height: 80, width: 80 }}
-            bgColor="#047690"
-            fgColor="white"
-            network="github"
-            href="https://github.com/SeGePop/my-app/tree/master/src/components/DrumMachine-main"
-            target="_blank"
-          />
-        </div>
-      </div>
-
-      <div className="gallery">
-        <a target="_blank" href="/randomquotes">
-          <img loading="lazy" src={random_quote} alt="Random Quote Generator" />
-        </a>
-        <div className="desc">
-          {t("projects.quote")}
-          <br></br>
-          <br></br>
-          <SocialIcon
-            className="project_button"
-            style={{ height: 80, width: 80 }}
-            bgColor="#047690"
-            fgColor="white"
-            network="github"
-            href="https://github.com/SeGePop/my-app/tree/master/src/components/RandomQuoteGenerator-main"
-            target="_blank"
-          />
         </div>
       </div>
     </section>
