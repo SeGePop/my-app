@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import profile from "../../images/profile.jpg";
-import CV_EN from "../../files/CV_EN.pdf";
+import CV_EN from "../../files/SergiuGeorgePopCV.pdf";
 
 export default function Home() {
   const [t] = useTranslation("global");
