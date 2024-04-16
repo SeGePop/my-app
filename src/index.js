@@ -12,7 +12,6 @@ import RandomQuoteGenerator from "./components/SecondaryComponents/FrontEnd/Rand
 import TO_DO_APP from "./components/SecondaryComponents/FrontEnd/To-Do-App/src/TO_DO_APP";
 
 // import fullstack secondary components
-import { Exercise_App } from "./components/SecondaryComponents/Fullstack/exerciseTracker/Exercise_App";
 
 // import projects sections
 import FrontEnd from "./components/SecondaryComponents/FrontEnd/FrontEnd";
@@ -55,7 +54,6 @@ root.render(
         <Route path="/frontend/drum" element={<DrumMachine />} />
         <Route path="/frontend/randomquotes" element={<RandomQuoteGenerator />} />
         {/* Fullstack routes */}
-        <Route path="/fullstack/exercise_tracker" element={<Exercise_App />} />
       </Routes>
     </BrowserRouter>
   </I18nextProvider>
