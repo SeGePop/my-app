@@ -4,12 +4,15 @@ import "./index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 
-// import secondary components
+// import frontend secondary components
 import ClockApp from "./components/SecondaryComponents/FrontEnd/25-5-Clock-main/src/App";
 import { JSCALC } from "./components/SecondaryComponents/FrontEnd/JSCalculator-main/src/JSCALC";
 import { DrumMachine } from "./components/SecondaryComponents/FrontEnd/DrumMachine-main/src/drumMachine";
 import RandomQuoteGenerator from "./components/SecondaryComponents/FrontEnd/RandomQuoteGenerator-main/src/RandomQuoteGenerator_App";
 import TO_DO_APP from "./components/SecondaryComponents/FrontEnd/To-Do-App/src/TO_DO_APP";
+
+// import fullstack secondary components
+import { Exercise_App } from "./components/SecondaryComponents/Fullstack/exerciseTracker/Exercise_App";
 
 // import projects sections
 import FrontEnd from "./components/SecondaryComponents/FrontEnd/FrontEnd";
@@ -51,6 +54,8 @@ root.render(
         <Route path="/frontend/calculator" element={<JSCALC />} />
         <Route path="/frontend/drum" element={<DrumMachine />} />
         <Route path="/frontend/randomquotes" element={<RandomQuoteGenerator />} />
+        {/* Fullstack routes */}
+        <Route path="/fullstack/exercise_tracker" element={<Exercise_App />} />
       </Routes>
     </BrowserRouter>
   </I18nextProvider>

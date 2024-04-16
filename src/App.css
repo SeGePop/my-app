@@ -651,3 +651,15 @@ i {
   background-color: var(--highlight);
   color: white;
 }
+
+
+/* UNDER CONSTRUCTION CSS */
+
+.under_construction{
+  width: auto;
+  height: 100vh;
+  text-align: center;
+  color: var(--highlight2);
+  font-size: 25px;
+  margin-top: 50vh;
+}

@@ -10,7 +10,7 @@ export default function Fullstack() {
       <h1>Projects</h1>
 
       <div className="gallery">
-        <a target="_blank" href="/backend/exerciseTracker">
+        <a target="_blank" href="/fullstack/exercise_tracker">
           <img loading="lazy" src={exerciseTracker} alt="Exercise Tracker" />
         </a>
         <div className="desc">
