@@ -367,6 +367,14 @@ a {
   transition: 0.5s;
 }
 
+/* LINE BREAKER */
+hr {
+  width: 90%;
+    height: 2px;
+    background: linear-gradient(to right, white 0%, var(--highlight2) 50%, white 100%);
+    border: none;
+}
+
 /* CREDENTIALS */
 .credentials_content {
   display: flex;
