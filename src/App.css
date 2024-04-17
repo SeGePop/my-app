@@ -372,7 +372,7 @@ a {
   display: flex;
   justify-content: center;
   width: 95vw;
-  margin-top: -50px;
+  margin-top: 0px;
 }
 
 .experience {
