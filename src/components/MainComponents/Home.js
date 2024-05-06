@@ -17,7 +17,7 @@ export default function Home() {
         <span>{t("home.p2")}</span>
       </p>
       <div className="personal_cv">
-        <a href={CV_EN} download="Sergiu-George Pop.pdf" id="personal_cv">
+        <a href={CV_EN} download="Sergiu-GeorgePop.pdf" id="personal_cv">
           <p>{t("home.resume")}</p>
         </a>
       </div>
