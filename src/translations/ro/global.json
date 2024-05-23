@@ -24,7 +24,8 @@
         "piano":"Aparat de percuție, compatibil cu mouse ori tastatură.",
         "quote":"Un simplu generator de citate.",
         "to_do_list":"O aplicație de gestionare a sarcinilor.",
-        "exercise": "Urmăriți-vă exercițiile, fie creând un cont nou sau conectându-vă la unul existent."
+        "exercise": "Urmăriți-vă exercițiile, fie creând un cont nou sau conectându-vă la unul existent.",
+        "commerce": "Comerț electronic Fullstack folosind Next.js (react.js, mongo, tailwind, componente cu stil)."
     },
     "contact":{
         "title":"Să intrăm în legătură!",
@@ -32,5 +33,8 @@
         "hiring_text": "Veniți să discutăm ce aveți nevoie pentru proiect, ce scop și cronologie v-ați propus. Sunt sigur că împreună putem crea ceva într-adevăr fantastic!",
         "contracting": "Contractant? ",
         "contracting_text": "Aveți nevoie de un dezvolator pentru o sarcină specifică, ori suport pe timp nedeterminat? Nu mai e nevoie să căutați - vă stau la dispoziție!"
+    },
+    "navbar_projects":{
+        "home": "ÎNAPOI ACASĂ"
     }
 }

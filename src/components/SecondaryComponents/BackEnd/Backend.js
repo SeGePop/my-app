@@ -1,5 +1,8 @@
+import NavbarProjects from "../../MainComponents/NavbarProjects";
+
 export default function BackEnd() {
   return <section className="bash">
+    <NavbarProjects />
     <h1>Backend Projects, focused on Bash, PostgreSQL, and Linux</h1>
     <ul>
         <li><a href="https://github.com/SeGePop/periodic_table">Periodic Table</a></li>

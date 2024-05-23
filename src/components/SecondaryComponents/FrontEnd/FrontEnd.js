@@ -6,6 +6,7 @@ import random_quote from "../../../images/random_quote.jpeg";
 import { SocialIcon } from "react-social-icons";
 import "react-slideshow-image/dist/styles.css";
 import { useTranslation } from "react-i18next";
+import NavbarProjects from "../../MainComponents/NavbarProjects";
 
 export default function FrontEnd() {
   const [t] = useTranslation("global");
@@ -13,6 +14,7 @@ export default function FrontEnd() {
     <section className="frontend_projects_content" id="frontend_projects_content">
       {/* spacing fix -> emtpy div */}
       <div></div>
+      <NavbarProjects />
       <div className="frontend_gallery">
         <a href="/frontend/clock">
           <img loading="lazy" src={clock} alt="25+5 Clock" />

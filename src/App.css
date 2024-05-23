@@ -177,6 +177,34 @@
     margin-right: 0.1em !important;
     margin-left: -10px;
   }
+
+
+/* PROJECTS FULLSTACK */
+
+.fullstack_projects_content {
+  display: flex !important;
+  flex-direction: column !important;
+  margin-top: 0;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+div.fullstack_gallery {
+  width: 70vw !important;
+  height: 21vh !important;
+  flex-direction: row !important;
+  justify-content: space-between;
+}
+
+.fullstack_desc {
+  margin-left: 10px;
+}
+
+div.fullstack_gallery img {
+  width: 20vw !important;
+  height: 19vh !important;
+  object-fit: cover;
+}
   
 
   /* CONTACT */
@@ -301,6 +329,48 @@ body {
   color: white;
 }
 
+/* TOPNAV_PROJECTS */
+
+/* navigation bar */
+/* Style the links inside the navigation bar */
+.topnav_projects {
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  background-color: var(--background);
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.topnav_projects a {
+  float: right;
+  color: var(--text-color);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  justify-content: center;
+}
+
+/* Change the color of links on hover */
+.topnav_projects a:hover {
+  background-color: var(--text-color);
+  color: var(--highlight);
+}
+
+/* Add a color to the active/current link */
+.topnav_projects a.active {
+  background-color: var(--background);
+  color: white;
+}
+
 /* Page content */
 
 .website {
@@ -313,9 +383,8 @@ body {
 section {
   padding-top: 50px;
   height: 100vh;
-  height: 100vh;
-  top: 0;
   width: 100vw;
+  top: 0;
 }
 /* all links must remain white */
 a {
@@ -516,6 +585,45 @@ div.frontend_desc {
 .bash > ul li::before {
   content: '>'; /* Unicode checkmark symbol */
   margin-right: 0.5em;
+}
+
+/* FULLSTACK PROJECTS */
+
+.fullstack_projects_content {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fullstackprojects_content > h1 {
+  font-size: 0;
+}
+
+div.fullstack_gallery {
+  background-image: linear-gradient(var(--body_background), var(--background));
+  border: #047690 solid;
+  margin: 5px;
+  float: left;
+  width: 20%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.fullstack_gallery:hover {
+  border: solid white;
+}
+
+div.fullstack_gallery img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+div.fullstack_desc {
+  padding: 15px;
+  text-align: center;
 }
 
 /* TO DO APP */
