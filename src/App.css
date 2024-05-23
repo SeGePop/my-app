@@ -782,6 +782,16 @@ i {
   color: white;
 }
 
+/* FOOTER */
+
+footer{
+  text-align: center;
+  font-size: 0.7rem;
+  height: 15px;
+  margin-top: -15px;
+  font-weight: 100;
+}
+
 
 /* UNDER CONSTRUCTION CSS */
 
