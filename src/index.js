@@ -54,6 +54,7 @@ root.render(
         <Route path="/frontend/drum" element={<DrumMachine />} />
         <Route path="/frontend/randomquotes" element={<RandomQuoteGenerator />} />
         {/* Fullstack routes */}
+        <Route path="/fullstack/commerce" element="" />
       </Routes>
     </BrowserRouter>
   </I18nextProvider>
